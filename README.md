@@ -16,3 +16,7 @@ https://enjoico.com/
 https://santacruzskateboards.com/
 
 https://www.distritomoda.com.ar/ me parece muy completa y minimalista.
+
+https://twonow.co/ me gusta por la organización que muestra en las imagenes de sus productos
+
+https://www.pullandbear.com/co/ diseño fresco
