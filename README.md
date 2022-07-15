@@ -4,6 +4,6 @@ Tambien vendemos las partes por separado de cada skate, para la persona que nece
 
 Martin Jenik: Inicializandome en el mundo de la programacion, busco adquirir las herramientas necesarias para poder ingresar en el mercado laboral del mismo.
 
-Juan Escobar: Colombiano, 25 años, entusiasta de las artes y fanático de los videojuegos, aprendiendo a desenvolverme en el mundo de la programación y el desarrollo web.
+Juan Escobar: Colombiano, 25 años, entusiasta de las artes y fanático de los videojuegos, aprendiendo a desenvolverme en este loco mundo de la programación y el desarrollo web.
 
 Guido Cardama: Argentino, 37 años. Estudiando programación para insertarme en este mundo y aprender nuevas herramientas.
