@@ -7,3 +7,11 @@ Martin Jenik: Inicializandome en el mundo de la programacion, busco adquirir las
 Juan Escobar: Colombiano, 25 años, entusiasta de las artes y fanático de los videojuegos, aprendiendo a desenvolverme en el mundo de la programación y el desarrollo web.
 
 Guido Cardama: Argentino, 37 años. Estudiando programación para insertarme en este mundo y aprender nuevas herramientas.
+
+
+LISTADO DE PAGINAS DE REFERENCIA:
+
+https://enjoico.com/
+
+https://santacruzskateboards.com/
+
