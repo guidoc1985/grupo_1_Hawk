@@ -8,6 +8,8 @@ Juan Escobar: Colombiano, 25 años, entusiasta de las artes y fanático de los v
 
 Guido Cardama: Argentino, 37 años. Estudiando programación para insertarme en este mundo y aprender nuevas herramientas.
 
+Juan José Carmona: Colomnia, 27 años, Estudiante de ingeniería Mecánica y tecnólogo en mecatrónica, amante de los videojuegos y explorar nuevos lugares.
+
 
 LISTADO DE PAGINAS DE REFERENCIA:
 
