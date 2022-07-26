@@ -13,7 +13,7 @@ Juan José Carmona: Colomnia, 27 años, Estudiante de ingeniería Mecánica y te
 
 LISTADO DE PAGINAS DE REFERENCIA:
 
-https://enjoico.com/ es una págin referente del skate
+https://enjoico.com/ es una página referente del skate
 
 https://santacruzskateboards.com/ es bastante clásica y funcional para los productos elegidos y el público del skate.
 
