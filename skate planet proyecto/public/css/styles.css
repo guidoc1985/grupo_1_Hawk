@@ -1,0 +1,163 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Anton', sans-serif;
+}
+
+.main-header{
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo{
+ width: 150px;
+ 
+}
+
+.hamburguer-button{
+
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    
+  
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article p{
+    display: inline-block;
+}
+
+.main-navbar{
+    display: none;
+}
+
+.main-navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-navbar a{
+text-decoration: none;
+color: white;
+display: flex;
+justify-content: space-around;
+padding: 5px o;
+font-size: 17px;
+}
+
+.product_img{
+    width: 250px;
+}
+
+.tablas{
+    border: solid 2px red;
+    display: flex;
+    padding: 2px;
+    font-size: 10px;
+    align-items: center;
+}
+
+.product_img{
+    width: 100%;
+    display: flex;
+}
+
+h4{
+    font-size:20px;
+}
+
+.description{
+font-size: 5px;
+display: none;
+
+}
+
+.price{
+    display: none;
+}
+
+.tablaaguila{
+    display: flex;
+    justify-content: center;
+    padding: 6px;
+
+}
+
+.element{
+    width: 5px;
+    border: solid 2px red;
+    
+}
+@media (min-width: 361px){
+
+    main section article .description{
+        display: block;
+    }
+    .main-header-top-bar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+.hamburguer-button{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.tablas{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+@media (min-width: 769px) {
+
+    .main-header-top-bar{
+      display: flex;
+    }
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .main-navbar{
+        margin-top: 40px;
+    }
+    .main-navbar li {
+        margin: 0 10px;
+    }
+    .main-navbar a {
+     font-size: 19px;
+    }
+
+    .hamburguer-button{
+        display: none;
+    
+    }
+   
+}
+}
