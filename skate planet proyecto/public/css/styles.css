@@ -13,6 +13,7 @@ body{
     padding: 20px;
     display: flex;
     justify-content: flex-start;
+    width: 100%;
 }
 
 .logo{
@@ -73,11 +74,12 @@ font-size: 17px;
 }
 
 .tablas{
-    border: solid 2px red;
+   
     display: flex;
     padding: 2px;
     font-size: 10px;
     align-items: center;
+    
 }
 
 .product_img{
@@ -87,8 +89,15 @@ font-size: 17px;
 
 h4{
     font-size:20px;
+      
 }
 
+h3{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+}
 .description{
 font-size: 5px;
 display: none;
@@ -109,7 +118,14 @@ display: none;
 .element{
     width: 5px;
     border: solid 2px red;
-    
+}
+
+.video{
+    display: flex;
+    image-resolution: 20px;
+    justify-content: center;
+  
+
 }
 @media (min-width: 361px){
 
@@ -125,6 +141,7 @@ display: none;
 .hamburguer-button{
     display: flex;
     justify-content: flex-end;
+    margin-left: 40%;
 
 }
 
