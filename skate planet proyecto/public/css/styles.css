@@ -26,6 +26,7 @@ body{
     color: white;
     display: flex;
     justify-content: flex-end;
+    width: 15%;
     
   
 }
@@ -49,6 +50,10 @@ main section article p{
 }
 
 .main-navbar{
+    display: none;
+}
+
+.lupaymas{
     display: none;
 }
 
@@ -82,27 +87,62 @@ font-size: 17px;
     
 }
 
+.mastablas{
+    width: 30%;
+    display:flex;
+    justify-content: space-around;
+    margin-left: 35%;
+    padding: 3px;
+    border: solid 1px black;
+    box-shadow: none;
+align-items: center;
+}
+
+.masruedas{
+    width: 30%;
+    display:flex;
+    justify-content: space-around;
+    margin-left: 35%;
+    padding: 3px;
+    border: solid 1px black;
+    box-shadow: none;
+align-items: center;
+}
+
+.mastrucks{
+    width: 30%;
+    display:flex;
+    justify-content: space-around;
+    margin-left: 35%;
+    padding: 3px;
+    border: solid 1px black;
+    box-shadow: none;
+align-items: center;
+}
 .product_img{
     width: 100%;
     display: flex;
 }
 
 h4{
-    font-size:20px;
+    font-size:20px
       
 }
 
 h3{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    
     display: flex;
     justify-content: center;
     padding: 2px;
+    font-size: 15px;
 }
-.description{
-font-size: 5px;
-display: none;
 
-}
+.description{
+    font-size: 6px;
+    display: none;
+    justify-content: center;
+    
+    }
 
 .price{
     display: none;
@@ -127,6 +167,41 @@ display: none;
   
 
 }
+
+.youtube{
+    
+    display: flex;
+    justify-content: center;
+    
+}
+
+.suscribe{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-left: 30%;
+    
+}
+
+.redes{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center ;
+}
+
+footer{
+    
+    background-color: black;
+    color: #fff;
+    font-weight: lighter;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+h3 .suscribe{
+    margin-top: 5px;
+}
 @media (min-width: 361px){
 
     main section article .description{
@@ -150,8 +225,21 @@ display: none;
     justify-content: space-around;
 }
 
+.description{
+    font-size: 6px;
+    display: flex;
+    justify-content: center;
+    
+    }
 
 @media (min-width: 769px) {
+
+    .description{
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        
+        }
 
     .main-header-top-bar{
       display: flex;
@@ -159,6 +247,7 @@ display: none;
     .main-navbar{
         display: flex;
         justify-content: space-between;
+        
     }
     
     .main-navbar{
@@ -175,6 +264,73 @@ display: none;
         display: none;
     
     }
-   
+    .lupaymas{
+        display: flex;
+        justify-content: flex-end;
+        
+        padding: 2px;
+        color: white;
+        margin-top: 20px;
+        padding: 15px;
+        margin-left: 20%;
+    }
+
+    .lupa{
+        
+        padding: 10px;
+    }
+    .user{
+        
+        padding:10px;
+    }
+    .carrito{
+        
+        padding: 10px;
+    }
+    .suscribe{
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        margin-left: 40%;
+        
+    }
+    h3{
+    
+        display: flex;
+        justify-content: center;
+        padding: 2px;
+        font-size: 20px;
+    }
 }
 }
+
+@media (min-width: 1000px) {
+
+    .lupaymas{
+        display: flex;
+        justify-content: flex-end;
+        
+        padding: 2px;
+        color: white;
+        margin-top: 20px;
+        padding: 15px;
+        margin-left: 40%;}
+
+        .suscribe{
+            display: flex;
+            justify-content: center;
+            padding: 5px;
+            margin-left: 42%;
+            
+        }
+
+        h3{
+    
+            display: flex;
+            justify-content: center;
+            padding: 2px;
+            font-size: 25px;
+        }
+
+     
+    }
