@@ -211,8 +211,32 @@ h3 .suscribe{
         display: flex;
         justify-content: space-between;
     }
-
-
+.precio {
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5%;
+}
+.cantidad{
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5%;
+}
+.descripcion{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+}
+.agregarAlCarrito{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin-left: 35%;
+}
 .hamburguer-button{
     display: flex;
     justify-content: flex-end;
@@ -230,6 +254,12 @@ h3 .suscribe{
     display: flex;
     justify-content: center;
     
+    }
+
+    .cantidadBoton{
+        display: flex;
+        justify-content: flex-start;
+        padding: 3px;
     }
 
 @media (min-width: 769px) {
