@@ -236,6 +236,14 @@ h3 .suscribe{
     display: flex;
     justify-content: center;
     margin-left: 35%;
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+}
+
+.agregarAlCarrito:hover{
+    background-color: red;
+    color: yellow;
+
 }
 .hamburguer-button{
     display: flex;
@@ -261,6 +269,33 @@ h3 .suscribe{
         justify-content: flex-start;
         padding: 3px;
     }
+
+    .subtotal{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: black;
+        color: white;
+    }
+
+    .checkout{
+        background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin-left: 35%;
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+        
+    }
+
+    .checkout:hover{
+        background-color: red;
+        color: yellow;
+    
+    }
+    
 
 @media (min-width: 769px) {
 
@@ -331,6 +366,15 @@ h3 .suscribe{
         padding: 2px;
         font-size: 20px;
     }
+    .checkout{
+        background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin-left: 45%;
+        
+    }
 }
 }
 
@@ -360,6 +404,15 @@ h3 .suscribe{
             justify-content: center;
             padding: 2px;
             font-size: 25px;
+        }
+        .checkout{
+            background-color: black;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        margin-left: 45%;
+            
         }
 
      
