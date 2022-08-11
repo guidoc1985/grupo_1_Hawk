@@ -202,6 +202,63 @@ footer{
 h3 .suscribe{
     margin-top: 5px;
 }
+
+.register{
+    display: flex;
+    justify-content: center;
+}
+
+.register h3{
+    font-size: 15px;
+}
+.skater{
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+}
+
+.crearcuenta{
+    display: flex;
+    justify-content: center;
+    font-size: 37px;
+    
+}
+.create-form{
+    padding: 20px 15px;
+}
+
+.control-formulario{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-style: italic;
+}
+.control{
+    width:100%;
+    padding: 8px;
+}
+
+.Newsletter{
+    display: flex;
+    justify-content: center;
+    padding: 8px
+    
+}
+
+.crear{
+    background-color: black;
+    border:none;
+    font-size: 20px;
+    color:white;
+    padding:5px;
+}
+.reset{
+    background-color: black;
+    border:none;
+    font-size: 20px;
+    color:white;
+    padding:5px;
+
+}
 @media (min-width: 361px){
 
     main section article .description{
@@ -295,8 +352,7 @@ h3 .suscribe{
         color: yellow;
     
     }
-    
-
+   
 @media (min-width: 769px) {
 
     .description{
@@ -394,7 +450,7 @@ h3 .suscribe{
             display: flex;
             justify-content: center;
             padding: 5px;
-            margin-left: 42%;
+            margin-left: 43%;
             
         }
 
@@ -414,6 +470,5 @@ h3 .suscribe{
         margin-left: 45%;
             
         }
-
-     
+  
     }
