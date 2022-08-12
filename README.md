@@ -22,3 +22,5 @@ https://www.distritomoda.com.ar/ me parece muy completa y minimalista.
 https://twonow.co/ me gusta por la organización que muestra en las imagenes de sus productos
 
 https://www.pullandbear.com/co/ diseño fresco
+
+https://trello.com/b/fnzt5TPL/grupo01 tablero de trabajo 
