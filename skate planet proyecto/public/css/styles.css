@@ -9,6 +9,9 @@ body{
 }
 
 .main-header{
+    position: fixed;
+    top: 0;
+    z-index: 100;
     background-color: black;
     padding: 20px;
     display: flex;
@@ -34,6 +37,8 @@ body{
 main{
     width: 90%;
     margin: 0 auto;
+    margin-top:50px;
+    
 }
 
 main section article{
@@ -221,7 +226,7 @@ h3 .suscribe{
     display: flex;
     justify-content: center;
     font-size: 37px;
-    
+    margin-top: 40px;
 }
 .create-form{
     padding: 20px 15px;
@@ -244,12 +249,14 @@ h3 .suscribe{
     
 }
 
-.crear{
+.submit{
     background-color: black;
     border:none;
     font-size: 20px;
     color:white;
     padding:5px;
+    border-radius: 5px;
+    border:none;
 }
 .reset{
     background-color: black;
@@ -257,9 +264,22 @@ h3 .suscribe{
     font-size: 20px;
     color:white;
     padding:5px;
-
+    border-radius: 5px;
+    border:none;
 }
+section.banner img{
+    width: 100%;
+    display: flex;
+    margin-top: 80px;
+}
+
 @media (min-width: 361px){
+    
+
+    .header{
+        position: fixed;
+
+    }
 
     main section article .description{
         display: block;
@@ -295,6 +315,8 @@ h3 .suscribe{
     margin-left: 35%;
     transition-property: background-color, color;
     transition-duration: 0.5s;
+    border-radius: 5px;
+    border:none;
 }
 
 .agregarAlCarrito:hover{
@@ -344,7 +366,8 @@ h3 .suscribe{
     margin-left: 35%;
     transition-property: background-color, color;
     transition-duration: 0.5s;
-        
+     border-radius: 5px;
+     border: none;   
     }
 
     .checkout:hover{
