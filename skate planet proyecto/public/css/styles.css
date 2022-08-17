@@ -127,6 +127,7 @@ align-items: center;
 .product_img{
     width: 100%;
     display: flex;
+    
 }
 
 h4{
@@ -274,7 +275,10 @@ section.banner img{
 }
 
 @media (min-width: 361px){
-    
+
+    .product_img:hover{
+        
+        box-shadow: 0px 0px 10px rgb(100, 100, 100)}
 
     .header{
         position: fixed;
