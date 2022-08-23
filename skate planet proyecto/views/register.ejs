@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<%- include('./partials/head') %>
+
+    <body>
+        <%- include('./partials/header') %>
+            </br>
+            <section class="banner">
+                <img src="images/banner-llamass.jpg" alt="Banner de fuego">
+            </section>
+            <div class="crearcuenta">
+                <h4>Crea tu cuenta!</h4>
+            </div>
+            <br>
+            <br>
+            <main class="register">
+
+                <form action="/" method="POST" class="create-form">
+                    <div class="control-formulario">
+                        <h4>Nombre y apellido</h4>
+                    </div>
+                    <div class="control">
+                        <input type="text" name="name" placeholder="Nombre y apellido">
+                    </div>
+                    <div class="control-formulario">
+                        <h4>Correo</h4>
+                    </div>
+                    <div class="control">
+                        <input type="email" name="email" placeholder="E-mail">
+                    </div>
+                    <br>
+                    <div class="control-formulario">
+                        <h4>Fecha de nacimiento</h4>
+                    </div>
+                    <div class="control">
+                        <label for="birth_date"><b></b></label>
+                    </div>
+                    <br>
+                    <div class="control">
+                        <input type="date" name="birth_date" id="birth_date">
+                    </div>
+                    <br>
+                    <div class="control-formulario">
+                        <h4>Contraseña</h4>
+                    </div>
+                    <div class="control">
+                        <input type="password" name="pass" placeholder="Elegí tu contraseña">
+                        <input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
+                    </div>
+                    <br>
+                    <br>
+
+                    <button class="submit" type="submit" value="Crear cuenta">Crear Cuenta
+                    </button>
+
+                    <button class="reset" type="reset" value="Borrar">Borrar</button>
+
+                    <br>
+                    <br>
+                    <br>
+                    <div class="skater">
+                        <i class="fas fa-snowboarding"></i>
+                    </div>
+                    <br>
+                    <br>
+
+                </form>
+            </main>
+            <%- include('./partials/footer') %>
+
+</html>

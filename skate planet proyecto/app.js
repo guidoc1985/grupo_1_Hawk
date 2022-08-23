@@ -2,6 +2,7 @@ const express = require('express');
 const mainRouter = require("./routers/main.js");
 const app = express();
 
+app.set('view engine','ejs')
 app.use("/", mainRouter);
 app.use(express.static('public'));
 
