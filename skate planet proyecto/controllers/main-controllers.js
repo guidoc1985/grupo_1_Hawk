@@ -19,6 +19,9 @@ const mainController ={
         res.render('register');
     
     },
+    formAdmin: (req,res)=>{
+        res.render('formAdmin');
+    }
 };
 
 
