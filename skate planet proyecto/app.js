@@ -8,6 +8,6 @@ app.use(express.static('public'));
 
 
 app.listen(3030, ()=>{
-    console.log('Servidor funcionando');
+    console.log('Servidor 3030 funcionando');
 });
 
