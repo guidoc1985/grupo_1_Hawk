@@ -8,11 +8,11 @@ const mainController ={
     
     },
     productCart: (req, res) =>{
-        res.render('productCart');
+        res.render('product-cart');
     
     },
     productDetail: (req, res) =>{
-        res.render('productDetail');
+        res.render('product-detail');
     
     },
     register: (req, res) =>{

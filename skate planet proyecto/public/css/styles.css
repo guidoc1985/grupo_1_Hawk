@@ -379,7 +379,43 @@ section.banner img{
         color: yellow;
     
     }
+
+    .editar{
+        background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+     border-radius: 5px;
+     border: none;   
+    }
    
+    .editar:hover{
+        background-color: red;
+        color: yellow;
+    }
+
+    .eliminar{
+        background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+     border-radius: 5px;
+     border: none;   
+    }
+   
+    .eliminar:hover{
+        background-color: red;
+        color: yellow;
+    }
+
 @media (min-width: 769px) {
 
     .description{
@@ -458,6 +494,26 @@ section.banner img{
     margin-left: 45%;
         
     }
+
+    .editar{
+        background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+        
+    }
+
+    .eliminar{
+        background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+        
+    }
 }
 }
 
@@ -497,5 +553,22 @@ section.banner img{
         margin-left: 45%;
             
         }
-  
+        .editar{
+            background-color: black;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        margin-left: 5%;
+            
+        }
+        .eliminar{
+            background-color: black;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        margin-left: 5%;
+            
+        }
     }
