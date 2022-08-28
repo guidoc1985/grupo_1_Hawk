@@ -41,6 +41,7 @@ body {
     display: flex;
     justify-content: flex-end;
     width: 15%;
+    
 
 
 }
@@ -380,7 +381,7 @@ section.banner img {
     }
 
     .subtotal-valor-box{
-        margin-left: 20%;
+        margin-left: 30%;
         text-align: center;
         height: 35px;
         display: flex;
