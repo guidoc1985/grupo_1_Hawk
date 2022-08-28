@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head') %>
+</head>
+
+<body>
+    <%- include('./partials/header') %>
+        
+
+        <span>
+            <FORM > Ingresar productos
+                <!-- nombre, codigo, precio, material, categoría, medida, origen, descripción, -->
+                <br>
+
+                <label for="nombre-producto: ">Nombre del producto</label>
+                <br>
+                <input type="text" name="nombre-producto" id="nombre-producto">
+
+                <br>
+                <br>
+
+                <label for="codigo-producto"> Código del producto: </label>
+                <br>
+                <input type="text" name="codigo-proucto" id="codigo-producto">
+
+                <br>
+                <br>
+
+                <label for="precio">Precio:</label>
+                <br>
+                <input type="text" name="precio" id="precio" placeholder="Ingresa el precio en USD">
+
+                <br>
+                <br>
+
+                <label for="material">Material: </label>
+                <br>
+                <input type="text" name="material" id="material">
+
+                <br>
+                <br>
+
+                <label for="Categoria">categoría</label position="relative">
+
+                <br>
+
+                <select name="categoria" id="categoria">
+                    <option value="0">Seleccione una categoría</option>
+                    <option value="Skate">Skateboard</option>
+                    <option value="Longboard">Longboard</option>
+                    <option value="Penny">Penny</option>
+                    <option value="Ruedas">Ruedas</option>
+                    <option value="Trucks">Trucks</option>
+                    <option value="ropa">Ropa</option>
+                    <option value="Accesorios">Accesorios</option>
+                </select>
+                
+                <br><br>
+
+                <label for="Medida">Medida:</label>
+                <br>
+                <input type="text" name="Medida" id="Medida">
+
+                <br><br>
+
+                <label for="origen">Origen:</label>
+                <br>
+                <input type="text" name="origen" id="origen">
+
+                <br><br>
+
+                <label for="descripcion">descripción</label>
+                <br>
+                <textarea name="descripción" id="" cols="50" rows="3"></textarea>
+                
+
+
+            </FORM>
+        </span>
+        <%- include('./partials/footer') %>
+</body>
+
+</html>

@@ -19,8 +19,8 @@ const mainController ={
         res.render('register');
     
     },
-    formAdmin: (req,res)=>{
-        res.render('formAdmin');
+    ingresarProductos: (req,res)=>{
+        res.render('Ingresar-Productos');
     }
 };
 
