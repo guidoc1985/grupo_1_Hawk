@@ -417,18 +417,9 @@ section.banner img {
         padding: 3px;
     }
 
-    .subtotal-valor-box{
-        margin-left: 30%;
-        text-align: center;
-        height: 35px;
-        display: flex;
-        justify-content: center;
-        width: min-content;
-    }
+   
     
-    .subtotal {
-        
-        width: 60vw;
+    .subtotal{
         display: flex;
         justify-content: space-around;
         align-items: center;
