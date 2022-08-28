@@ -99,6 +99,44 @@ main section article p {
     width: 250px;
 }
 
+.span-ing-prod{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.ingresar-productos{   
+    border: solid 3px black;
+    padding: 10px;
+    justify-content: center;
+    flex: none;
+    width: 80%;
+}
+
+.nivel1-form{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.nivel1-form div, .nivel3-form div{
+    padding: 5px;
+}
+
+.nivel2-form {
+    padding: 5px;
+}
+
+.nivel3-form{
+    display: flex;
+}
+
+
+input, textarea{
+    max-width: 95%;
+}
+
 .tablas {
 
     display: flex;

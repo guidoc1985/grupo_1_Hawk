@@ -7,56 +7,55 @@
 
 <body>
     <%- include('./partials/header') %>
-        
+        <br>
 
-        <span>
-            <FORM > Ingresar productos
+        <span class="span-ing-prod">
+            <FORM class="ingresar-productos">
+                <h2>Ingresar productos</h2>
                 <!-- nombre, codigo, precio, material, categoría, medida, origen, descripción, -->
                 <br>
+                <div class="nivel1-form">
+                    <div class="part1">
+                        <label for="nombre-producto: ">Nombre del producto</label>
+                        <br>
+                        <input type="text" name="nombre-producto" id="nombre-producto">
+                    </div>
+                    <div class="part2">
+                        <label for="codigo-producto"> Código del producto: </label>
+                        <br>
+                        <input type="text" name="codigo-proucto" id="codigo-producto">
+                    </div>
+                </div>
 
-                <label for="nombre-producto: ">Nombre del producto</label>
-                <br>
-                <input type="text" name="nombre-producto" id="nombre-producto">
 
-                <br>
-                <br>
+                <div class="nivel2-form">
+                    <label for="precio">Precio:</label>
+                    <br>
+                    <input type="text" name="precio" id="precio" placeholder="Ingresa el precio en USD">
+                </div>
 
-                <label for="codigo-producto"> Código del producto: </label>
-                <br>
-                <input type="text" name="codigo-proucto" id="codigo-producto">
-
-                <br>
-                <br>
-
-                <label for="precio">Precio:</label>
-                <br>
-                <input type="text" name="precio" id="precio" placeholder="Ingresa el precio en USD">
-
-                <br>
-                <br>
-
-                <label for="material">Material: </label>
-                <br>
-                <input type="text" name="material" id="material">
-
-                <br>
-                <br>
-
-                <label for="Categoria">categoría</label position="relative">
-
-                <br>
-
-                <select name="categoria" id="categoria">
-                    <option value="0">Seleccione una categoría</option>
-                    <option value="Skate">Skateboard</option>
-                    <option value="Longboard">Longboard</option>
-                    <option value="Penny">Penny</option>
-                    <option value="Ruedas">Ruedas</option>
-                    <option value="Trucks">Trucks</option>
-                    <option value="ropa">Ropa</option>
-                    <option value="Accesorios">Accesorios</option>
-                </select>
-                
+                <div class="nivel3-form">
+                    <div class="part1">
+                        <label for="material">Material: </label>
+                        <br>
+                        <input type="text" name="material" id="material">
+                    </div>
+                    <div class="part2">
+                    
+                        <label for="Categoria">categoría</label position="relative">
+                            <br>
+                        <select name="categoria" id="categoria">
+                            <option value="0">Seleccione una categoría</option>
+                            <option value="Skate">Skateboard</option>
+                            <option value="Longboard">Longboard</option>
+                            <option value="Penny">Penny</option>
+                            <option value="Ruedas">Ruedas</option>
+                            <option value="Trucks">Trucks</option>
+                            <option value="ropa">Ropa</option>
+                            <option value="Accesorios">Accesorios</option>
+                        </select>
+                    </div>
+                </div>
                 <br><br>
 
                 <label for="Medida">Medida:</label>
@@ -73,8 +72,8 @@
 
                 <label for="descripcion">descripción</label>
                 <br>
-                <textarea name="descripción" id="" cols="50" rows="3"></textarea>
-                
+                <textarea name="descripcion" id="descripcion" cols="50"  rows="3"></textarea>
+
 
 
             </FORM>
