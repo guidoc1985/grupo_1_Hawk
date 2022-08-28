@@ -24,8 +24,14 @@ body{
     width: 100%;
 }
 
+.logo-y-rutas{
+    width: 50%;
+    display: flex;
+
+}
+
 .logo{
- width: 150px;
+    width:180px;
  
 }
 
@@ -60,8 +66,7 @@ main section article p{
 }
 
 .main-navbar{
-    position: relatives;
-    left: 30px;
+    width: 50%;
     display: none;
 }
 
@@ -72,12 +77,12 @@ main section article p{
 }
 
 .main-navbar ul{
-
+    width: 100%;
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .main-navbar a{
@@ -298,7 +303,7 @@ section.banner img{
     main section article .description{
         display: block;
     }
-    .main-header-top-bar{
+    .logodiv{
         display: flex;
         justify-content: space-between;
     }
@@ -435,7 +440,7 @@ section.banner img{
         
         }
 
-    .main-header-top-bar{
+    .logodiv{
       display: flex;
     }
     .main-navbar{
