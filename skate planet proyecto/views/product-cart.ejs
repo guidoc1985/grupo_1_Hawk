@@ -45,15 +45,20 @@
                 </section>
                 </br>
             </main>
-            <div class="subtotal">
-                <h4>SUBTOTAL</h4>
-                <form action="/" method="POST">
-                    <input class="suma" type="number" name="number" placeholder="TOTAL">
-            </div>
+            <span class="subtotal-valor-box">
 
+                <div class="subtotal">
+                    <h4>SUBTOTAL</h4>
+                    <form action="/" method="POST">
+                        <input class="suma" type="number" name="number" placeholder="TOTAL">
+
+                </div>
+            </span>
             </br>
             </br>
-            <button class="checkout">CHECKOUT</button>
+            <DIV class="checkout-div">
+                <button class="checkout">CHECKOUT</button>
+            </DIV>
             </br>
             </br>
             <%- include('./partials/footer') %>

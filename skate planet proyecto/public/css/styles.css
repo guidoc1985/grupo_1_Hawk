@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -12,8 +12,8 @@ body{
     font-family: 'Anton', sans-serif;
 }
 
-.main-header{
-    
+.main-header {
+
     position: fixed;
     top: 0;
     z-index: 100;
@@ -24,59 +24,59 @@ body{
     width: 100%;
 }
 
-.logo-y-rutas{
+.logo-y-rutas {
     width: 50%;
     display: flex;
 
 }
 
-.logo{
-    width:180px;
- 
+.logo {
+    width: 180px;
+
 }
 
-.hamburguer-button{
+.hamburguer-button {
 
     color: white;
     display: flex;
     justify-content: flex-end;
     width: 15%;
-    
-  
+
+
 }
 
-main{
+main {
     width: 90%;
     margin: 0 auto;
-    margin-top:50px;
-    
+    margin-top: 50px;
+
 }
 
-main section article{
-    background-color: #fff;    
+main section article {
+    background-color: #fff;
     margin: 10px 0px;
 }
 
-main section article img{
+main section article img {
     width: 100%;
 }
 
-main section article p{
+main section article p {
     display: inline-block;
 }
 
-.main-navbar{
+.main-navbar {
     width: 50%;
     display: none;
 }
 
-.lupaymas{
+.lupaymas {
     width: 100;
     justify-content: flex-end;
     display: none;
 }
 
-.main-navbar ul{
+.main-navbar ul {
     width: 100%;
     list-style: none;
     margin: 0;
@@ -85,134 +85,134 @@ main section article p{
     justify-content: space-around;
 }
 
-.main-navbar a{
-text-decoration: none;
-color: white;
-display: flex;
-justify-content: space-around;
-padding: 5px o;
-font-size: 17px;
+.main-navbar a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px o;
+    font-size: 17px;
 }
 
-.product_img{
+.product_img {
     width: 250px;
 }
 
-.tablas{
-   
+.tablas {
+
     display: flex;
     padding: 2px;
     font-size: 10px;
     align-items: center;
-    
+
 }
 
-.mastablas{
+.mastablas {
     width: 30%;
-    display:flex;
+    display: flex;
     justify-content: space-around;
     margin-left: 35%;
     padding: 3px;
     border: solid 1px black;
     box-shadow: none;
-align-items: center;
+    align-items: center;
 }
 
-.masruedas{
+.masruedas {
     width: 30%;
-    display:flex;
+    display: flex;
     justify-content: space-around;
     margin-left: 35%;
     padding: 3px;
     border: solid 1px black;
     box-shadow: none;
-align-items: center;
+    align-items: center;
 }
 
-.mastrucks{
+.mastrucks {
     width: 30%;
-    display:flex;
+    display: flex;
     justify-content: space-around;
     margin-left: 35%;
     padding: 3px;
     border: solid 1px black;
     box-shadow: none;
-align-items: center;
+    align-items: center;
 }
-.product_img{
+
+.product_img {
     width: 100%;
     display: flex;
-    
+
 }
 
-h4{
-    font-size:20px
-      
+h4 {
+    font-size: 20px
 }
 
-h3{
-    
+h3 {
+
     display: flex;
     justify-content: center;
     padding: 2px;
     font-size: 15px;
 }
 
-.description{
+.description {
     font-size: 6px;
     display: none;
     justify-content: center;
-    
-    }
 
-.price{
+}
+
+.price {
     display: none;
 }
 
-.tablaaguila{
+.tablaaguila {
     display: flex;
     justify-content: center;
     padding: 6px;
 
 }
 
-.element{
+.element {
     width: 5px;
     border: solid 2px red;
 }
 
-.video{
+.video {
     display: flex;
     image-resolution: 20px;
     justify-content: center;
-  
+
 
 }
 
-.youtube{
-    
+.youtube {
+
     display: flex;
     justify-content: center;
-    
+
 }
 
-.suscribe{
+.suscribe {
     display: flex;
     justify-content: center;
     padding: 5px;
     margin-left: 30%;
-    
+
 }
 
-.redes{
+.redes {
     display: flex;
     justify-content: space-around;
     padding: 10px;
-    align-items: center ;
+    align-items: center;
 }
 
-footer{
-    
+footer {
+
     background-color: black;
     color: #fff;
     font-weight: lighter;
@@ -220,155 +220,177 @@ footer{
 
 }
 
-h3 .suscribe{
+h3 .suscribe {
     margin-top: 5px;
 }
 
-.register{
+.register {
     display: flex;
     justify-content: center;
 }
 
-.register h3{
+.register h3 {
     font-size: 15px;
 }
-.skater{
+
+.skater {
     display: flex;
     justify-content: center;
     font-size: 36px;
 }
 
-.crearcuenta{
+.crearcuenta {
     display: flex;
     justify-content: center;
     font-size: 37px;
     margin-top: 40px;
 }
-.create-form{
+
+.create-form {
     padding: 20px 15px;
 }
 
-.control-formulario{
+.control-formulario {
     margin-bottom: 15px;
     margin-top: 15px;
     font-style: italic;
 }
-.control{
-    width:100%;
+
+.control {
+    width: 100%;
     padding: 8px;
 }
 
-.Newsletter{
+.Newsletter {
     display: flex;
     justify-content: center;
     padding: 8px
-    
 }
 
-.submit{
+.submit {
     background-color: black;
-    border:none;
+    border: none;
     font-size: 20px;
-    color:white;
-    padding:5px;
+    color: white;
+    padding: 5px;
     border-radius: 5px;
-    border:none;
+    border: none;
 }
-.reset{
+
+.reset {
     background-color: black;
-    border:none;
+    border: none;
     font-size: 20px;
-    color:white;
-    padding:5px;
+    color: white;
+    padding: 5px;
     border-radius: 5px;
-    border:none;
+    border: none;
 }
-section.banner img{
+
+section.banner img {
     width: 100%;
     display: flex;
     margin-top: 80px;
 }
 
-@media (min-width: 361px){
+@media (min-width: 361px) {
 
-    .product_img:hover{
-        
-        box-shadow: 0px 0px 10px rgb(100, 100, 100)}
+    .product_img:hover {
 
-    .header{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100)
+    }
+
+    .header {
         position: fixed;
 
     }
 
-    main section article .description{
+    main section article .description {
         display: block;
     }
-    .logodiv{
+
+    .logodiv {
         display: flex;
         justify-content: space-between;
     }
-.precio {
-    font-size: 15px;
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 5%;
-}
-.cantidad{
-    font-size: 15px;
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 5%;
-}
-.descripcion{
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    margin-left: 5%;
-}
-.agregarAlCarrito{
-    background-color: black;
-    color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    margin-left: 35%;
-    transition-property: background-color, color;
-    transition-duration: 0.5s;
-    border-radius: 5px;
-    border:none;
-}
 
-.agregarAlCarrito:hover{
-    background-color: red;
-    color: yellow;
-
-}
-.hamburguer-button{
-    display: flex;
-    justify-content: flex-end;
-    margin-left: 40%;
-
-}
-
-.tablas{
-    display: flex;
-    justify-content: space-around;
-}
-
-.description{
-    font-size: 6px;
-    display: flex;
-    justify-content: center;
-    
+    .precio {
+        font-size: 15px;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 5%;
     }
 
-    .cantidadBoton{
+    .cantidad {
+        font-size: 15px;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 5%;
+    }
+
+    .descripcion {
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        margin-left: 5%;
+    }
+
+    .agregarAlCarrito {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        margin-left: 35%;
+        transition-property: background-color, color;
+        transition-duration: 0.5s;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .agregarAlCarrito:hover {
+        background-color: red;
+        color: yellow;
+
+    }
+
+    .hamburguer-button {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: 40%;
+
+    }
+
+    .tablas {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .description {
+        font-size: 6px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .cantidadBoton {
         display: flex;
         justify-content: flex-start;
         padding: 3px;
     }
 
-    .subtotal{
+    .subtotal-valor-box{
+        margin-left: 20%;
+        text-align: center;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        width: min-content;
+    }
+    
+    .subtotal {
+        
+        width: 60vw;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -376,213 +398,231 @@ section.banner img{
         color: white;
     }
 
-    .checkout{
-        background-color: black;
-    color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    margin-left: 35%;
-    transition-property: background-color, color;
-    transition-duration: 0.5s;
-     border-radius: 5px;
-     border: none;   
-    }
-
-    .checkout:hover{
-        background-color: red;
-        color: yellow;
-    
-    }
-
-    .editar{
-        background-color: black;
-    color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    margin-left: 5%;
-    transition-property: background-color, color;
-    transition-duration: 0.5s;
-     border-radius: 5px;
-     border: none;   
-    }
-   
-    .editar:hover{
-        background-color: red;
-        color: yellow;
-    }
-
-    .eliminar{
-        background-color: black;
-    color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    margin-left: 5%;
-    transition-property: background-color, color;
-    transition-duration: 0.5s;
-     border-radius: 5px;
-     border: none;   
-    }
-   
-    .eliminar:hover{
-        background-color: red;
-        color: yellow;
-    }
-
-@media (min-width: 769px) {
-
-    .description{
-        font-size: 12px;
+    .checkout-div {
+        text-align: center;
         display: flex;
         justify-content: center;
-        
+    }
+
+    .checkout {
+        width: 200px;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        transition-property: background-color, color;
+        transition-duration: 0.5s;
+        border-radius: 5px;
+        border: none;
+        margin: 0px;
+    }
+
+    .checkout:hover {
+        background-color: red;
+        color: yellow;
+
+    }
+
+    .editar {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        margin-left: 5%;
+        transition-property: background-color, color;
+        transition-duration: 0.5s;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .editar:hover {
+        background-color: red;
+        color: yellow;
+    }
+
+    .eliminar {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        margin-left: 5%;
+        transition-property: background-color, color;
+        transition-duration: 0.5s;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .eliminar:hover {
+        background-color: red;
+        color: yellow;
+    }
+
+    @media (min-width: 769px) {
+
+        .description {
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+
         }
 
-    .logodiv{
-      display: flex;
-    }
-    .main-navbar{
-        display: flex;
-        justify-content: space-between;
-        
-    }
-    
-    .main-navbar{
-        margin-top: 40px;
-    }
-    .main-navbar li {
-        margin: 0 10px;
-    }
-    .main-navbar a {
-     font-size: 19px;
-    }
+        .logodiv {
+            display: flex;
+        }
 
-    .hamburguer-button{
-        display: none;
-    
-    }
-    .lupaymas{
-        display: flex;     
-        width: 100px    ;   
-        padding: 2px;
-        color: white;
-        margin-top: 20px;
-        padding: 15px;
-        margin-left: 20%;
-    }
+        .main-navbar {
+            display: flex;
+            justify-content: space-between;
 
-    .lupa{
-        
-        padding: 10px;
-    }
-    .user{
-        
-        padding:10px;
-    }
-    .carrito{
-        
-        padding: 10px;
-    }
-    .suscribe{
-        display: flex;
-        justify-content: center;
-        padding: 5px;
-        margin-left: 40%;
-        
-    }
-    h3{
-    
-        display: flex;
-        justify-content: center;
-        padding: 2px;
-        font-size: 20px;
-    }
-    .checkout{
-        background-color: black;
-    color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    margin-left: 45%;
-        
-    }
+        }
 
-    .editar{
-        background-color: black;
-    color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    margin-left: 5%;
-        
-    }
+        .main-navbar {
+            margin-top: 40px;
+        }
 
-    .eliminar{
-        background-color: black;
-    color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    margin-left: 5%;
-        
+        .main-navbar li {
+            margin: 0 10px;
+        }
+
+        .main-navbar a {
+            font-size: 19px;
+        }
+
+        .hamburguer-button {
+            display: none;
+
+        }
+
+        .lupaymas {
+            display: flex;
+            width: 100px;
+            padding: 2px;
+            color: white;
+            margin-top: 20px;
+            padding: 15px;
+            margin-left: 20%;
+        }
+
+        .lupa {
+
+            padding: 10px;
+        }
+
+        .user {
+
+            padding: 10px;
+        }
+
+        .carrito {
+
+            padding: 10px;
+        }
+
+        .suscribe {
+            display: flex;
+            justify-content: center;
+            padding: 5px;
+            margin-left: 40%;
+
+        }
+
+        h3 {
+
+            display: flex;
+            justify-content: center;
+            padding: 2px;
+            font-size: 20px;
+        }
+
+        .checkout {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .editar {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            margin-left: 5%;
+
+        }
+
+        .eliminar {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            margin-left: 5%;
+
+        }
     }
-}
 }
 
 @media (min-width: 1000px) {
 
-    .lupaymas{
+    .lupaymas {
         display: flex;
         justify-content: flex-end;
-        
+
         padding: 2px;
         color: white;
         margin-top: 20px;
         padding: 15px;
-        margin-left: 40%;}
-
-        .suscribe{
-            display: flex;
-            justify-content: center;
-            padding: 5px;
-            margin-left: 43%;
-            
-        }
-
-        h3{
-    
-            display: flex;
-            justify-content: center;
-            padding: 2px;
-            font-size: 25px;
-        }
-        .checkout{
-            background-color: black;
-        color: white;
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-        margin-left: 45%;
-            
-        }
-        .editar{
-            background-color: black;
-        color: white;
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-        margin-left: 5%;
-            
-        }
-        .eliminar{
-            background-color: black;
-        color: white;
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-        margin-left: 5%;
-            
-        }
+        margin-left: 40%;
     }
+
+    .suscribe {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        margin-left: 43%;
+
+    }
+
+    h3 {
+
+        display: flex;
+        justify-content: center;
+        padding: 2px;
+        font-size: 25px;
+    }
+
+    .checkout {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .editar {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        margin-left: 5%;
+
+    }
+
+    .eliminar {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        margin-left: 5%;
+
+    }
+}
