@@ -337,6 +337,7 @@ h3 .suscribe {
     margin-bottom: 15px;
     margin-top: 15px;
     font-style: italic;
+    
 }
 
 .control {
@@ -375,7 +376,16 @@ section.banner img {
     display: flex;
 }
 
+.link-form{
+    text-decoration: none;
+    color: black;
+}
+
 @media (min-width: 361px) {
+    .link-form{
+        text-decoration: none;
+        color: black;
+    }
 
     .product_img:hover {
 
