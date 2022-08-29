@@ -10,73 +10,49 @@
         <br>
 
         <span class="span-ing-prod">
-            <FORM class="ingresar-productos">
-                <h2>Ingresar productos</h2>
-                <!-- nombre, codigo, precio, material, categoría, medida, origen, descripción, -->
-                <br>
-                <div class="nivel1-form">
-                    <div class="part1">
-                        <label for="nombre-producto: ">Nombre del producto</label>
-                        <br>
-                        <input type="text" name="nombre-producto" id="nombre-producto">
-                    </div>
-                    <div class="part2">
-                        <label for="codigo-producto"> Código del producto: </label>
-                        <br>
-                        <input type="text" name="codigo-proucto" id="codigo-producto">
-                    </div>
-                </div>
-
-
-                <div class="nivel2-form">
-                    <label for="precio">Precio:</label>
+            <div class="ingresar-productos">
+                <form class="form-tabla">
+                    <h2 class="titulo-registro">Registra tus productos</h2>
+                    <!-- nombre, codigo, precio, material, categoría, medida, origen, descripción, -->
                     <br>
-                    <input type="text" name="precio" id="precio" placeholder="Ingresa el precio en USD">
-                </div>
-
-                <div class="nivel3-form">
-                    <div class="part1">
-                        <label for="material">Material: </label>
-                        <br>
-                        <input type="text" name="material" id="material">
-                    </div>
-                    <div class="part2">
-                    
-                        <label for="Categoria">categoría</label position="relative">
-                            <br>
-                        <select name="categoria" id="categoria">
-                            <option value="0">Seleccione una categoría</option>
-                            <option value="Skate">Skateboard</option>
-                            <option value="Longboard">Longboard</option>
-                            <option value="Penny">Penny</option>
-                            <option value="Ruedas">Ruedas</option>
-                            <option value="Trucks">Trucks</option>
-                            <option value="ropa">Ropa</option>
-                            <option value="Accesorios">Accesorios</option>
-                        </select>
-                    </div>
-                </div>
-                <br><br>
-
-                <label for="Medida">Medida:</label>
-                <br>
-                <input type="text" name="Medida" id="Medida">
-
-                <br><br>
-
-                <label for="origen">Origen:</label>
-                <br>
-                <input type="text" name="origen" id="origen">
-
-                <br><br>
-
-                <label for="descripcion">descripción</label>
-                <br>
-                <textarea name="descripcion" id="descripcion" cols="50"  rows="3"></textarea>
-                
-
-
-            </FORM>
+                    <label for="nombre-producto"></label>
+                    <input type="text" name="nombre-producto" id="nombre-producto" placeholder="Nombre del producto">
+                    <br>
+                    <label for="codigo-producto"></label>
+                    <input type="text" name="codigo-proucto" id="codigo-producto" placeholder="Código del producto">
+                    <br>
+                    <label for="precio"></label>
+                    <input type="text" name="precio" id="precio" placeholder="Precio (en USD)">
+                    <br>
+                    <label for="material"></label>
+                    <input type="text" name="material" id="material" placeholder="Material">
+                    <br>
+                    <label for="Categoria"></label position="relative">
+                    <select name="categoria" id="categoria">
+                        <option value="0">Categoría</option>
+                        <option value="Skate">Skateboard</option>
+                        <option value="Longboard">Longboard</option>
+                        <option value="Penny">Penny</option>
+                        <option value="Ruedas">Ruedas</option>
+                        <option value="Trucks">Trucks</option>
+                        <option value="ropa">Ropa</option>
+                        <option value="Accesorios">Accesorios</option>
+                    </select>
+                    <br>
+                    <label for="Medida"></label>
+                    <input type="text" name="Medida" id="Medida" placeholder="Medida">
+                    <br>
+                    <label for="origen"></label>
+                    <input type="text" name="origen" id="origen" placeholder="Origen">
+                    <br>
+                    <label for="descripcion"></label>
+                    <textarea class="textarea-form" name="descripcion" id="descripcion" cols="35" rows="2"
+                        placeholder="Deja una descripción del producto"></textarea>
+                    <br>
+                    <button class="boton-guardar">Guardar</button>
+                    <!-- <img src="images/esqueleto-bailando-esqueleto.gif" alt="gif" class="gif-esqueleto"> -->
+                </form>
+            </div>
         </span>
         <br>
         <%- include('./partials/footer') %>
