@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<%- include('./partials/head') %>
+
+    <body>
+        <%- include('./partials/header') %>
+    <br>
+    <br>
+       <h3>NUESTROS PRODUCTOS</h3>
+            <main>
+                <% for(let producto of productos ) { %>
+                    <section class="tablas">
+                        <article>
+                            <div class="tablaaguila">
+                                <img src="/images/products/<%= producto.image %>" alt="imagen de producto" class="product_img">
+                            </div>
+                            <div class="precio-descuento">
+                                <p class="price">$<%= producto.price %></p>
+                            </div>
+                            <h4 class="description"><%= producto.description %></h4>
+                            </div>
+                            <br>
+                        </article>
+                    </section>
+                        <% } %>
+               
+                <section>
+                    <div class="youtube">
+                        <h3>Seguinos en YouTube</h3>
+                    </div>
+                    </br>
+                    <div class="video">
+
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/2bh3__d9ewk"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+
+                </section>
+                </br>
+
+            </main>
+    </body>
+    <%- include('./partials/footer') %>
+
+</html>

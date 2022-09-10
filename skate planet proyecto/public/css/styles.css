@@ -22,6 +22,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    
 }
 
 .logo-y-rutas {
@@ -75,6 +76,7 @@ main section article p {
     width: 100;
     justify-content: flex-end;
     display: none;
+    color: white;
 }
 
 .main-navbar ul {
@@ -249,7 +251,7 @@ h3 {
 }
 
 .price {
-    display: none;
+    display: flex;
 }
 
 .tablaaguila {
@@ -326,7 +328,7 @@ h3 .suscribe {
     display: flex;
     justify-content: center;
     font-size: 37px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .create-form {
@@ -334,15 +336,15 @@ h3 .suscribe {
 }
 
 .control-formulario {
-    margin-bottom: 15px;
-    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
     font-style: italic;
     
 }
 
 .control {
     width: 100%;
-    padding: 8px;
+    padding: 5px;
 }
 
 .Newsletter {

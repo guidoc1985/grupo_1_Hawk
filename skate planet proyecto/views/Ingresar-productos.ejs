@@ -8,10 +8,11 @@
 <body>
     <%- include('./partials/header') %>
         <br>
-
+        
         <span class="span-ing-prod">
             <div class="ingresar-productos">
-                <form class="form-tabla">
+                <form class="form-tabla" action="/products/create" method="POST" enctype="multipart/form-data">
+                
                     <h2 class="titulo-registro">Registra tus productos</h2>
                     <!-- nombre, codigo, precio, material, categoría, medida, origen, descripción, -->
                     <br>
