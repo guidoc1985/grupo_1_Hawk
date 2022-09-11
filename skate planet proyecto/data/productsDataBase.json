@@ -1,100 +1,108 @@
 [
-    {
-     "id": 1,
-     "name": "Tabla aguila logo",
-     "price": 15000,
-     "category": "visited",
-     "description": "tabla de madera maple de 7 capas, resina epoxy",
-     "image": "tablaaguila.jpg"
-    },
-    {
-     "id": 2,
-     "name": "Tabla aguila logo azul",
-     "price": 18000,
-     "discount": 3,
-     "category": "in-sale",
-     "description": "tabla de maple de 7 capas resina epoxy",
-     "image": "tablaguilaazul.jpg"
-    },
-    {
-     "id": 3,
-     "name": "Tabla zombie",
-     "price": 15000,
-     "discount": 25,
-     "category": "in-sale",
-     "description": "tabla de maple oriental 7 capas resin-6",
-     "image": "tablacara.jpg"
-    },
-    {
-     "id": 4,
-     "name": "Yellow wheels",
-     "description": "ruedas uretano 53mm 99A",
-     "price": 12000,
-     "discount": 10,
-     "image": "ruedas1.jpeg",
-     "category": "in-sale"
-    },
-    {
-     "id": 5,
-     "name": "White slime wheels",
-     "description": "uretano 54mm 99a",
-     "price": 18000,
-     "discount": 20,
-     "image": "ruedas2.jpg",
-     "category": "in-sale"
-    },
-    {
-     "id": 6,
-     "name": "sky wheels",
-     "description": "Uretano 56mm 98a",
-     "price": 16000,
-     "discount": 12,
-     "image": "ruedas3.jpg",
-     "category": "in-sale"
-    },
-    {
-     "id": 7,
-     "name": "Green slime wheels",
-     "description": "Uretano 52mm 99a",
-     "price": 12000,
-     "discount": 5,
-     "image": "ruedas4.jpg",
-     "category": "in-sale"
-    },
-    {
-     "id": 8,
-     "name": "Trucks indy toyma",
-     "description": "149 hollow titanium", 
-     "price": 28000,
-     "discount": 2,
-     "image": "trucks1.jpg",
-     "category": "in-sale"
-    },
-    {
-     "id": 9,
-     "name": "Trucks indy black",
-     "description": "159 hollow titanium",
-     "price": 29000,
-     "discount": 0,
-     "image": "trucks2.jpg",
-     "category": "visited"
-    },
-    {
-        "id": 10,
-        "name": "Trucks indy sky",
-        "description": "159 hollow titanium",
-        "price": 29000,
-        "discount": 0,
-        "image": "trucks3.jpg",
-        "category": "visited"
-       },
-       {
-        "id": 11,
-        "name": "Trucks indy slayer",
-        "description": "149 hollow titanium",
-        "price": 28000,
-        "discount": 0,
-        "image": "trucks4.jpg",
-        "category": "visited"
-       }
+ {
+  "id": 1,
+  "name": "Tabla aguila logo",
+  "price": 15000,
+  "category": "visited",
+  "description": "tabla de madera maple de 7 capas, resina epoxy",
+  "image": "tablaaguila.jpg"
+ },
+ {
+  "id": 2,
+  "name": "Tabla aguila logo azul",
+  "price": 18000,
+  "discount": 3,
+  "category": "in-sale",
+  "description": "tabla de maple de 7 capas resina epoxy",
+  "image": "tablaguilaazul.jpg"
+ },
+ {
+  "id": 3,
+  "name": "Tabla zombie",
+  "price": 15000,
+  "discount": 25,
+  "category": "in-sale",
+  "description": "tabla de maple oriental 7 capas resin-6",
+  "image": "tablacara.jpg"
+ },
+ {
+  "id": 4,
+  "name": "Yellow wheels",
+  "description": "ruedas uretano 53mm 99A",
+  "price": 12000,
+  "discount": 10,
+  "image": "ruedas1.jpeg",
+  "category": "in-sale"
+ },
+ {
+  "id": 5,
+  "name": "White slime wheels",
+  "description": "uretano 54mm 99a",
+  "price": 18000,
+  "discount": 20,
+  "image": "ruedas2.jpg",
+  "category": "in-sale"
+ },
+ {
+  "id": 6,
+  "name": "sky wheels",
+  "description": "Uretano 56mm 98a",
+  "price": 16000,
+  "discount": 12,
+  "image": "ruedas3.jpg",
+  "category": "in-sale"
+ },
+ {
+  "id": 7,
+  "name": "Green slime wheels",
+  "description": "Uretano 52mm 99a",
+  "price": 12000,
+  "discount": 5,
+  "image": "ruedas4.jpg",
+  "category": "in-sale"
+ },
+ {
+  "id": 8,
+  "name": "Trucks indy toyma",
+  "description": "149 hollow titanium",
+  "price": 28000,
+  "discount": 2,
+  "image": "trucks1.jpg",
+  "category": "in-sale"
+ },
+ {
+  "id": 9,
+  "name": "Trucks indy black",
+  "description": "159 hollow titanium",
+  "price": 29000,
+  "discount": 0,
+  "image": "trucks2.jpg",
+  "category": "visited"
+ },
+ {
+  "id": 10,
+  "name": "Trucks indy sky",
+  "description": "159 hollow titanium",
+  "price": 29000,
+  "discount": 0,
+  "image": "trucks3.jpg",
+  "category": "visited"
+ },
+ {
+  "id": 11,
+  "name": "Trucks indy slayer",
+  "description": "149 hollow titanium",
+  "price": 28000,
+  "discount": 0,
+  "image": "trucks4.jpg",
+  "category": "visited"
+ },
+ {
+  "id": 1662860265553,
+  "name": "Tabla serpiente",
+  "description": "Tabla maple 8.5",
+  "price": "15000",
+  "category": "Skate",
+  "image": "1662860265543tablaelement.jpg"
+ }
 ]
