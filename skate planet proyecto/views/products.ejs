@@ -9,8 +9,11 @@
        <h3>NUESTROS PRODUCTOS</h3>
             <main>
                 <% for(let producto of productos ) { %>
+
                     <section class="tablas">
+                       
                         <article>
+                            <a href="/products/detail/<%= producto.id %>">
                             <div class="tablaaguila">
                                 <img src="/images/products/<%= producto.image %>" alt="imagen de producto" class="product_img">
                             </div>
@@ -19,6 +22,7 @@
                             </div>
                             <h4 class="description"><%= producto.description %></h4>
                             </div>
+                        </a>
                             <br>
                         </article>
                     </section>

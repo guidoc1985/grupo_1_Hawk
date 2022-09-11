@@ -7,21 +7,27 @@
             </br>
             <main>
                 
-                <h3>Detalle de producto</h3>
+                <h3>Detalle de producto 
+                    <%= producto.name %>
+                </h3>
                 </br>
                 </br>
                 <div class="precio-descuento">
 
                 </div>
-                <h4 class="descripcion">Tabla Aguila Logo, Medida: 8.5, Material: canadian maple,  Origen: Canadá </h4>
+                <h4 class="descripcion">Tabla Aguila Logo, Medida: 8.5, Material: canadian maple,  Origen: Canadá 
+                    <%= producto.description %>
+                </h4>
                 </div>
 
                 <section class="tablas">
                     <article>
                         <div class="tablaaguila">
-                            <img src="images/tablaaguila.jpg" alt="tablaaguila" class="product_img">
+                            <img src="/images/products/<%= producto.image %>" alt= "tablaaguila" class="product_img">
                         </div>
-                        <p class="precio">Precio: $15.000</p>
+                        <p class="precio">Precio: $15.000
+                            $<%= producto.price %>
+                        </p>
                         </br>
                         <div class="cantidadBoton">
                             <p class="cantidad">Cantidad: </p>
@@ -36,6 +42,7 @@
                     </article>
 
                 </section>
+                
                 </br>
             </main>
 
