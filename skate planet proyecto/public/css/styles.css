@@ -231,6 +231,12 @@ input, textarea{
 
 }
 
+.product_img2 {
+    width: 60%;
+    display: flex;
+
+}
+
 h4 {
     font-size: 20px
 }
@@ -381,6 +387,15 @@ section.banner img {
 .link-form{
     text-decoration: none;
     color: black;
+}
+.botoneditar{
+    display: flex;
+    justify-content: center;
+   
+    font-family: 'Anton', sans-serif;
+    align-items: center;
+    margin-left: -58%;
+
 }
 
 @media (min-width: 361px) {
@@ -544,6 +559,15 @@ section.banner img {
         background-color: red;
         color: yellow;
     }
+    .botoneditar{
+        display: flex;
+        justify-content: center;
+       
+        font-family: 'Anton', sans-serif;
+        align-items: center;
+        margin-left: -58%;
+    
+    }
 
     @media (min-width: 769px) {
 
@@ -650,6 +674,15 @@ section.banner img {
             margin-left: 5%;
 
         }
+        .botoneditar{
+            display: flex;
+            justify-content: center;
+           
+            font-family: 'Anton', sans-serif;
+            align-items: center;
+            margin-left: -80%;
+        
+        }
     }
 }
 
@@ -710,4 +743,14 @@ section.banner img {
         margin-left: 5%;
 
     }
+    .botoneditar{
+        display: flex;
+        justify-content: center;
+       
+        font-family: 'Anton', sans-serif;
+        align-items: center;
+        margin-left: -60%;
+    
+    }
 }
+ 

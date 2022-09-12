@@ -1,9 +1,9 @@
 [
  {
   "id": 1,
-  "name": "Tabla aguila logo",
-  "price": 15000,
-  "category": "visited",
+  "name": "Tabla Camión",
+  "price": "15000",
+  "category": "0",
   "description": "tabla de madera maple de 7 capas, resina epoxy",
   "image": "tablaaguila.jpg"
  },
@@ -96,13 +96,5 @@
   "discount": 0,
   "image": "trucks4.jpg",
   "category": "visited"
- },
- {
-  "id": 1662860265553,
-  "name": "Tabla serpiente",
-  "description": "Tabla maple 8.5",
-  "price": "15000",
-  "category": "Skate",
-  "image": "1662860265543tablaelement.jpg"
  }
 ]

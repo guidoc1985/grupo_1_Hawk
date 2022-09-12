@@ -75,7 +75,7 @@ const controller = {
     const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
     const producto = products.find((p) => p.id == req.params.id);
 
-    res.render("product-edit-form", { productToEdit: producto });
+    res.render("editar-productos", { productToEdit: producto });
   },
   // Update - Method to update
   update: (req, res) => {
