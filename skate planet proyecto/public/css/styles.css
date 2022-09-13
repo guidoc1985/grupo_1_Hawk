@@ -10,6 +10,8 @@ body {
     justify-content: space-between;
     height: 100vh;
     font-family: 'Anton', sans-serif;
+   
+    
 }
 
 .main-header {
@@ -51,6 +53,8 @@ main {
     width: 90%;
     margin: 0 auto;
     margin-top: 50px;
+    
+  
 
 }
 
@@ -201,6 +205,7 @@ input, textarea{
     border: solid 1px black;
     box-shadow: none;
     align-items: center;
+    text-decoration: none;
 }
 
 .masruedas {
@@ -212,6 +217,7 @@ input, textarea{
     border: solid 1px black;
     box-shadow: none;
     align-items: center;
+    text-decoration: none;
 }
 
 .mastrucks {
@@ -223,6 +229,7 @@ input, textarea{
     border: solid 1px black;
     box-shadow: none;
     align-items: center;
+    text-decoration: none;
 }
 
 .product_img {
@@ -238,7 +245,7 @@ input, textarea{
 }
 
 h4 {
-    font-size: 20px
+    font-size: 30px
 }
 
 h3 {
@@ -250,8 +257,8 @@ h3 {
 }
 
 .description {
-    font-size: 6px;
-    display: none;
+    font-size: 15px;
+    display: flex;
     justify-content: center;
 
 }
@@ -388,15 +395,9 @@ section.banner img {
     text-decoration: none;
     color: black;
 }
-.botoneditar{
-    display: flex;
-    justify-content: center;
-   
-    font-family: 'Anton', sans-serif;
-    align-items: center;
-    margin-left: -58%;
 
-}
+
+
 
 @media (min-width: 361px) {
     .link-form{
@@ -568,6 +569,31 @@ section.banner img {
         margin-left: -58%;
     
     }
+    .precio-descuento{
+        text-decoration: none;
+        color: black;
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+        
+    }
+    .precio-descuento2 {
+        text-decoration: none;
+        color: black;
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+        
+    }
+    .precio-descuento3 {
+        text-decoration: none;
+        color: black;
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+      
+    }
+
 
     @media (min-width: 769px) {
 
@@ -683,6 +709,28 @@ section.banner img {
             margin-left: -80%;
         
         }
+        .precio-descuento{
+            text-decoration: none;
+            color: black;
+            display: flex;
+            justify-content: center;
+            font-size: 16px;
+        }
+        .precio-descuento2{
+            text-decoration: none;
+            color: black;
+            display: flex;
+            justify-content: center;
+            font-size: 16px;
+        }
+        .precio-descuento3{
+            text-decoration: none;
+            color: black;
+            display: flex;
+            justify-content: center;
+            font-size: 16px;
+        }
+        
     }
 }
 
@@ -752,5 +800,25 @@ section.banner img {
         margin-left: -60%;
     
     }
+    .precio-descuento{
+        text-decoration: none;
+        color: black;
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+    }
+    .precio-descuento2{
+        text-decoration: none;
+        color: black;
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+    }
+    .precio-descuento3{
+        text-decoration: none;
+        color: black;
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+    }
 }
- 

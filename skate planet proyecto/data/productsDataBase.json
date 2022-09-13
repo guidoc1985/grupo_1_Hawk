@@ -96,5 +96,13 @@
   "discount": 0,
   "image": "trucks4.jpg",
   "category": "visited"
+ },
+ {
+  "id": 1663036421085,
+  "name": "Un producto nuevo que editamos",
+  "description": "Tabla de maple 8.5 que ancho",
+  "price": "15000 re caro",
+  "category": "0",
+  "image": "1663036421066tablaelement.jpg"
  }
 ]

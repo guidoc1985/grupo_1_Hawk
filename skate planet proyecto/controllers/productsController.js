@@ -7,7 +7,7 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
 const toThousand = (n) => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 const controller = {
-  // Root - Show all products
+  // HOME : EN REALIDAD MUESTRA EL /PRODUCTS
   home: (req, res) => {
     const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
     // Do the magic
@@ -16,35 +16,26 @@ const controller = {
     
   },
 
-  // Detail - Detail from one product
+  // Detail - DETALLE DE PRODUCTO, MUESTRA UN PRODUCTO 
   detail: (req, res) => {
     const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
     const producto = products.find((p) => p.id == req.params.id);
     res.render("detail", { producto: producto });
   },
 
-  // Create - Form to create
+  // Create - TE MUESTRA EL FORMULARIO DE CREACION DE PRODUCTOS
   create: (req, res) => {
     res.render("ingresar-productos.ejs");
   },
 
-  // Create -  Method to store
+  // Create -  GUARDA EL PRODUCTO NUEVO
   store: (req, res) => {
     const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
 
     console.log("///////////////////////////////");
     console.log(req.file);
     console.log("///////////////////////////////");
-    // {
-    //   fieldname: 'fotoProducto',
-    //   originalname: 'img1.png',
-    //   encoding: '7bit',
-    //   mimetype: 'image/png',
-    //   destination: 'public/images/products',
-    //   filename: '1662079258169img1.png',
-    //   path: 'public\\images\\products\\1662079258169img1.png',
-    //   size: 875190
-    // }
+    
 
     const productoNuevo = {
       id: Date.now(),
@@ -70,14 +61,14 @@ const controller = {
     res.redirect("/products");
   },
 
-  // Update - Form to edit
+  // Update - MUESTRA EL FORMULARIO DE EDICION DE PRODUCTOS
   edit: (req, res) => {
     const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
     const producto = products.find((p) => p.id == req.params.id);
 
     res.render("editar-productos", { productToEdit: producto });
   },
-  // Update - Method to update
+  // Update - METODO DE EDICION
   update: (req, res) => {
     const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
     console.log(req.body);
@@ -110,7 +101,7 @@ const controller = {
     res.redirect("/products/detail/" + req.params.id);
   },
 
-  // Delete - Delete one product from DB
+  // Delete -BORRA UN PRODUCTO DEL JSON
   destroy: (req, res) => {
     let products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
     const producto = products.find((p) => p.id == req.params.id);

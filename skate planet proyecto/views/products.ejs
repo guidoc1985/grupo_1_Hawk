@@ -17,17 +17,23 @@
                             <div class="tablaaguila">
                                 <img src="/images/products/<%= producto.image %>" alt="imagen de producto" class="product_img2">
                             </div>
+                            <div class="precio-descuento3">
+                                <h4 class="description" style="text-decoration: none;"><%= producto.name %></h4>
+                                </div>
+                           
+                            <div class="precio-descuento2">
+                            <h4 class="description" style="text-decoration: none;"><%= producto.description %></h4>
+                            </div>
                             <div class="precio-descuento">
                                 <p class="price" style="text-decoration: none;" >$<%= producto.price %></p>
                             </div>
-                            <h4 class="description" style="text-decoration: none;"><%= producto.description %></h4>
-                            </div>
+                            
                         </a>
                             <br>
                         </article>
                     </section>
                         <% } %>
-               
+                    </main>
                 <section>
                     <div class="youtube">
                         <h3>Seguinos en YouTube</h3>
@@ -44,7 +50,7 @@
                 </section>
                 </br>
 
-            </main>
+           
     </body>
     <%- include('./partials/footer') %>
 
