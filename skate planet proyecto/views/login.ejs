@@ -1,61 +1,61 @@
 <!DOCTYPE html>
-<html>
-<%- include('./partials/head') %>
+<html lang="en">
 
-    <body>
-        <%- include('./partials/header') %>
-           
-            <section class="banner">
-                <img src="images/banner-llamass.jpg" alt="Banner de fuego">
-            </section>
-            <div class="crearcuenta">
-                <h4>Ingresá!</h4>
-            </div>
-            
-            
-            <main class="register">
+<head>
+    <%- include('./partials/head') %>
+</head>
 
-                <form action="/" method="POST">
+<body>
+    <%- include('./partials/header') %>
+        <br>
+        
+        <span class="span-ing-prod">
+            <div class="ingresar-productos">
+                <form class="form-tabla" action="/users" method="POST" class="form-login">
                 
-                    <div class="control-formulario">
-                        <h4>Correo</h4>
-                    </div>
-                    <div class="control">
-                        <input type="email" name="email" placeholder="E-mail">
-                    </div>
+                    <h2 class="titulo-registro">Ingresá!</h2>
+                    <!-- nombre, codigo, precio, material, categoría, medida, origen, descripción, -->
                     <br>
-                    <div class="control-formulario">
-                        <h4>Contraseña</h4>
-                    </div>
-                    <div class="control">
-                        <input type="password" name="pass" placeholder="pass">
-                    </div>
-
-                    <p>Olvidaste tu pass?</p>
+                    <label for="name"></label>
+                    <input type="text" name="firstName" id="firstName" placeholder="Nombre de Usuario" value="<%=  locals.errores?.firstName?.value %>" >
+                    <div class="error">
+                        <% if(locals.errores && errores.firstName){ %>
+                          <%= errores.firstName.msg %>
+                        <% } %>
+                      </div>
                     <br>
-                    <input type="radio" name="recordar" value="Recordar usuario">Recordar Usuario?
+                    <label for="apellido"></label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Apellido de Usuario" value="<%=  locals.errores?.lastName?.value %>">
+                    <div class="error">
+                        <% if(locals.errores && errores.lastName){ %>
+                          <%= errores.lastName.msg %>
+                        <% } %>
+                      </div>
                     <br>
+                    <label for="email"></label>
+                    <input type="text" name="email" id="email" placeholder="email" value="<%=  locals.errores?.email?.value %>">
+                    <div class="error">
+                        <% if(locals.errores && errores.email){ %>
+                          <%= errores.email.msg %>
+                        <% } %>
+                      </div>
                     <br>
-                    <button class="submit" type="submit" value="Ingresar">Ingresar</button>
-
-                    <button class="reset" type="reset" value="Borrar">Borrar</button>
+                    <label for="password"></label>
+                    <input type="text" name="password" id="password" placeholder="*******" value="<%=  locals.errores?.password?.value %>">
+                    <div class="error">
+                        <% if(locals.errores && errores.password){ %>
+                          <%= errores.password.msg %>
+                        <% } %>
+                      </div>
                     <br>
-                    <br>
-                    <br>
-                    <div class="control-formulario">
-                    <a href="/register" style="color: black">O creá tu cuenta!</a>
-                </div>
-                    <br>
-                    <br>
-                    <div class="skater">
-                        <i class="fas fa-snowboarding"></i>
-                    </div>
-                    <br>
-                    <br>
-
-
+                   
+                    <input type="submit" value="Ingresar">Ingresar</button>
+                    <!-- <img src="images/esqueleto-bailando-esqueleto.gif" alt="gif" class="gif-esqueleto"> -->
                 </form>
-            </main>
-            <%- include('./partials/footer') %>
+            </div>
+        </span>
+        <br>
+        <%- include('./partials/footer') %>
+</body>
 
 </html>

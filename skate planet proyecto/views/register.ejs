@@ -1,70 +1,43 @@
 <!DOCTYPE html>
-<html>
-<%- include('./partials/head') %>
+<html lang="en">
 
-    <body>
-        <%- include('./partials/header') %>
-            <section class="banner">
-                <img src="images/banner-llamass.jpg" alt="Banner de fuego">
-            </section>
-            <div class="crearcuenta">
-                <h4>Crea tu cuenta!</h4>
-            </div>
-            
-            
-            <main class="register">
+<head>
+    <%- include('./partials/head') %>
+</head>
 
-                <form action="/" method="POST" class="create-form">
-                    <div class="control-formulario">
-                        <h4>Nombre y apellido</h4>
-                    </div>
-                    <div class="control">
-                        <input type="text" name="name" placeholder="Nombre y apellido">
-                    </div>
-                    <div class="control-formulario">
-                        <h4>Correo</h4>
-                    </div>
-                    <div class="control">
-                        <input type="email" name="email" placeholder="E-mail">
-                    </div>
-                    
-                    <div class="control-formulario">
-                        <h4>Fecha de nacimiento</h4>
-                    </div>
-                    <div class="control">
-                        <label for="birth_date"><b></b></label>
-                    </div>
-                    
-                    <div class="control">
-                        <input type="date" name="birth_date" id="birth_date">
-                    </div>
-                    
-                    <div class="control-formulario">
-                        <h4>Contraseña</h4>
-                    </div>
-                    <div class="control">
-                        <input type="password" name="pass" placeholder="Elegí tu contraseña">
-                        <input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
-                    </div>
-<br>
-                    <button class="submit" type="submit" value="Crear cuenta">Crear Cuenta
-                    </button>
-
-                    <button class="reset" type="reset" value="Borrar">Borrar</button>
-
-                    <div class="control-formulario">
-                        <a href="/login" style="color: black">O ingresá!</a>
-                </div>
+<body>
+    <%- include('./partials/header') %>
+        <br>
+        
+        <span class="span-ing-prod">
+            <div class="ingresar-productos">
+                <form class="form-tabla" action="/users/create" method="POST" enctype="multipart/form-data">
+                
+                    <h2 class="titulo-registro">Registrate como usuario</h2>
+                    <!-- nombre, codigo, precio, material, categoría, medida, origen, descripción, -->
                     <br>
+                    <label for="name"></label>
+                    <input type="text" name="firstName" id="firstName" placeholder="Nombre de Usuario" class="form-input">
                     <br>
-                    <div class="skater">
-                        <i class="fas fa-snowboarding"></i>
-                    </div>
+                    <label for="apellido"></label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Apellido de Usuario" class="form-input">
                     <br>
+                    <label for="email"></label>
+                    <input type="text" name="email" id="email" placeholder="email" class="form-input">
                     <br>
-
+                    <label for="password"></label>
+                    <input type="text" name="password" id="password" placeholder="*******" class="form-input">
+                    <br>
+                    <label for="foto" class="form-label"></label>
+                    <input type="file" id="foto" name="fotoProducto" class="form-input">
+                    <br>
+                    <button type="submit" class="boton-guardar">Guardar</button>
+                    <!-- <img src="images/esqueleto-bailando-esqueleto.gif" alt="gif" class="gif-esqueleto"> -->
                 </form>
-            </main>
-            <%- include('./partials/footer') %>
+            </div>
+        </span>
+        <br>
+        <%- include('./partials/footer') %>
+</body>
 
 </html>

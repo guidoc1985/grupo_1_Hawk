@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<%- include('./partials/head') %>
+
+    <body>
+        <%- include('./partials/header') %>
+    <br>
+    <br>
+       <h3>NUESTROS USUARIOS</h3>
+            <main>
+                <% for(let user of users ) { %>
+
+                    <section class="tablas">
+                       
+                        <article>
+                            <a href="/users/detail/<%= user.id %>">
+                            <div class="tablaaguila">
+                                <img src="/images/users/<%= user.image %>" alt="imagen de producto" class="product_img2">
+                            </div>
+                            <div class="precio-descuento3">
+                                <h4 class="description" style="text-decoration: none;"><%= user.firstName %></h4>
+                                </div>
+                           
+                            <div class="precio-descuento2">
+                            <h4 class="description" style="text-decoration: none;"><%= user.lastName %></h4>
+                            </div>
+                            <div class="precio-descuento">
+                                <p class="price" style="text-decoration: none;" ><%= user.email %></p>
+                            </div>
+                            
+                        </a>
+                            <br>
+                        </article>
+                    </section>
+                        <% } %>
+                    </main>
+                <section>
+                    <div class="youtube">
+                        <h3>Seguinos en YouTube</h3>
+                    </div>
+                    </br>
+                    <div class="video">
+
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/2bh3__d9ewk"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+
+                </section>
+                </br>
+
+           
+    </body>
+    <%- include('./partials/footer') %>
+
+</html>
