@@ -31,52 +31,13 @@
   "password": "12345678",
   "image": "muska.jpg"
  },
+ 
  {
-  "id": 1664197277965,
-  "firstName": "",
-  "lastName": "",
-  "email": "",
-  "password": "",
-  "image": "default-image.png"
- },
- {
-  "id": 1664235426830,
-  "firstName": "Clay ",
-  "lastName": "Kreiner",
-  "email": "clay1234@hotmail.com",
-  "password": "clay12345",
-  "image": "1664235426817tablacara.jpg"
- },
- {
-  "id": 1664670047195,
-  "firstName": "GUIDO",
-  "lastName": "CARDAMA",
-  "email": "guidocardama@gmail.com",
-  "password": "123456",
-  "image": "default-image.png"
- },
- {
-  "id": 1664671779336,
-  "firstName": "",
-  "lastName": "",
-  "email": "",
-  "password": "",
-  "image": "default-image.png"
- },
- {
-  "id": 1664792721918,
-  "firstName": "guido",
-  "lastName": "cardama",
-  "email": "g",
-  "password": "",
-  "image": "default-image.png"
- },
- {
-  "id": 1664792759485,
-  "firstName": "guido",
-  "lastName": "cardama",
-  "email": "guidocardama@gmail.com",
-  "password": "12345",
-  "image": "1664792759464ruedas3.jpg"
+  "id": 6,
+  "firstName": "Carla",
+  "lastName": "Cherro",
+  "email": "carlacherro@yahoo.com",
+  "password": "$2a$10$C.D6f1ua9CZ.h424Zhsix.iTxYC/PYc5lQoS6zH1JLEUrkD1JKbjm",
+  "image": "16650180702254d44e76758f35cd9dbce5f77259b9a9e--ideas-para-decoupage (1).jpg"
  }
 ]

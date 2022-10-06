@@ -13,9 +13,8 @@
             <nav>
               <a href="/users/logout">salir</a>
             </nav>
-            <h2>Nombre: <%= user.firstName %></h2>
-            <h2>Apellido: <%= user.lastName %></h2>
-            <p>Email: <%= user.email %></p>
+      <p>Email: <%= user.email %></p>
+      <img src="/images/users/<%= user.image %> ">
         <br>
         <%- include('./partials/footer') %>
 </body>

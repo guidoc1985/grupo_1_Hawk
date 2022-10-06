@@ -9,15 +9,17 @@ const productRouter = require("./routers/products.js")
 const usersRouter = require("./routers/users");
 
 const session = require("express-session");
+const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride("_method")); // Pasar poder pisar el method="POST" en el formulario por PUT y DELETE
-app.use(session({ secret: "secret" }));
+app.use(session({ secret: "secret", resave: false,
+saveUninitialized: false, }));
 
 app.use(express.json());
 app.use(cookieParser());
-
+app.use(userLoggedMiddleware);
 
 
 app.set('view engine','ejs')

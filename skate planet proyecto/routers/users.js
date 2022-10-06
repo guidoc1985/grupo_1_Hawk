@@ -1,11 +1,27 @@
 const express = require('express');
 
 const router = express.Router();
-const { validationResult } = require("express-validator");
-
-const validacionesUser = require("../middlewares/userValidaciones");
+const { body } = require("express-validator");
 const usersController = require('../controllers/usersController');
+const guestMiddleware = require('../middlewares/guestMiddleware');
+const authMiddleware = require('../middlewares/authMiddleware');
 
+const validaciones = [
+  body("firstName")
+    .notEmpty()
+    .withMessage("El nombre es obligatorio"),
+    body("lastName")
+    .notEmpty()
+    .withMessage("El apellido es obligatorio"),
+    body("email")
+    .notEmpty()
+    .withMessage("El email es obligatorio").bail()
+    .isEmail().withMessage("Debes escribir un correo válido"),
+    body("password")
+    .notEmpty()
+    .withMessage("El pass es obligatorio"),
+   
+]
 // ************ MULTER ************
 const multer = require("multer");
 
@@ -26,10 +42,13 @@ const upload = multer({ storage });
 /* GET users listing. */
 
 router.get("/", usersController.homeUsers);
-router.get("/create", usersController.create);
-router.post("/create", upload.single("fotoProducto"), usersController.store);
-router.get("/", usersController.loginView);
-router.post('/', validacionesUser ,  usersController.loginAction);
+router.get("/create", guestMiddleware, usersController.create);
+router.post("/create", upload.single("fotoProducto"), validaciones, usersController.store);
+router.get("/login", guestMiddleware ,  usersController.loginView);
+router.post("/login", usersController.loginAction);
+router.get('/profile/', authMiddleware ,  usersController.profile);
+router.get('/logout', usersController.logoutAction);
+// router.post('/', validacionesUser ,  usersController.loginAction);
 
 // router.post("/", validacionesUser, usersController.loginAction, (req, res) => {
 //   const errores = validationResult(req);
@@ -55,9 +74,9 @@ router.post('/', validacionesUser ,  usersController.loginAction);
 // });
 
 
-router.get('/main', usersController.mainView);
-router.get('/perfil', usersController.perfilView);
+// router.get('/main', usersController.mainView);
+// router.get('/perfil', usersController.perfilView);
 
-router.get('/logout', usersController.logoutAction );
+// router.get('/logout', usersController.logoutAction );
 
 module.exports = router;

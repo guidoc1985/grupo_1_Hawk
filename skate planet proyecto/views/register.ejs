@@ -10,6 +10,11 @@
         <br>
         
         <span class="span-ing-prod">
+            <!-- <% if (locals.errors) { %>
+            <% for ( let oneError in errors ) { %>
+            <p><%= errors[oneError].msg %></p> 
+        <%} %>
+    <% } %> -->
             <div class="ingresar-productos">
                 <form class="form-tabla" action="/users/create" method="POST" enctype="multipart/form-data">
                 
@@ -18,18 +23,37 @@
                     <br>
                     <label for="name"></label>
                     <input type="text" name="firstName" id="firstName" placeholder="Nombre de Usuario" class="form-input">
+                   <br>
+                    <% if (locals.errors && errors.firstName) { %>
+                    <%= errors.firstName.msg %>
+                <% } %>
                     <br>
                     <label for="apellido"></label>
                     <input type="text" name="lastName" id="lastName" placeholder="Apellido de Usuario" class="form-input">
                     <br>
+                    <% if (locals.errors && errors.lastName) { %>
+                    <%= errors.lastName.msg %>
+                <% } %>
+                    <br>
+
                     <label for="email"></label>
                     <input type="text" name="email" id="email" placeholder="email" class="form-input">
+                    <br>
+                    <% if (locals.errors && errors.email) { %>
+                    <%= errors.email.msg %>
+                <% } %>
                     <br>
                     <label for="password"></label>
                     <input type="text" name="password" id="password" placeholder="*******" class="form-input">
                     <br>
+                    <% if (locals.errors && errors.password) { %>
+                    <%= errors.password.msg %>
+                <% } %>
+                    <br>
                     <label for="foto" class="form-label"></label>
                     <input type="file" id="foto" name="fotoProducto" class="form-input">
+                    <br>
+                   
                     <br>
                     <button type="submit" class="boton-guardar">Guardar</button>
                     <!-- <img src="images/esqueleto-bailando-esqueleto.gif" alt="gif" class="gif-esqueleto"> -->
