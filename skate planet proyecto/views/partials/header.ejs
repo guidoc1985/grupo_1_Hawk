@@ -25,7 +25,7 @@
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>
     </a>
-        <a href="/login" class="user" style="color: white">
+        <a href="/users/login" class="user" style="color: white">
         <div class="user">
             <i class="fa-solid fa-circle-user"></i>
         </div>
@@ -36,11 +36,15 @@
         </div>
         <ul class="navbar-nav align-items-center">
             <% if (locals.isLogged) { %>
-                <img src="/images/users/<%= locals.userLogged.users %>" width="40" style="border-radius: 100%;">
-                        Hi <%= locals.userLogged.email %> 
+                <br>
+                <img src="/images/users/<%= locals.userLogged.image %>" width="40" style="border-radius: 100%;">
+                <br>      
+                 <%= locals.userLogged.email %> 
                     </a>
-                   
-                        <a class="dropdown-item" href="/users/logout">Logout</a>
+                    <a class="dropdown-item" href="/users/profile">My profile</a>
+                    <br>
+                    <a class="dropdown-item" href="/users/logout">Logout</a>
+                        
                     </ul>
                 </li>
            

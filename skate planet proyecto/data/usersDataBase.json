@@ -31,7 +31,6 @@
   "password": "12345678",
   "image": "muska.jpg"
  },
- 
  {
   "id": 6,
   "firstName": "Carla",
@@ -39,5 +38,29 @@
   "email": "carlacherro@yahoo.com",
   "password": "$2a$10$C.D6f1ua9CZ.h424Zhsix.iTxYC/PYc5lQoS6zH1JLEUrkD1JKbjm",
   "image": "16650180702254d44e76758f35cd9dbce5f77259b9a9e--ideas-para-decoupage (1).jpg"
+ },
+ {
+  "id": 7,
+  "firstName": "GUIDO",
+  "lastName": "CARDAMA",
+  "email": "guidocardama@gmail.com",
+  "password": "$2a$10$j8MB.byTip5E/6arBQb4YugQIy3YjlhEyhntqfjRoS.x2vZfXe30K",
+  "image": "1665035013438maxresdefault.jpg"
+ },
+ {
+  "id": 8,
+  "firstName": "pepe",
+  "lastName": "sanches",
+  "email": "pepe@hotmail.com",
+  "password": "$2a$10$bfrSia3/4FmL.WZnze1yPuQOU8nOQXSeX9CDP6CPrwGTPhjlUCLqy",
+  "image": "16650413091004d44e76758f35cd9dbce5f77259b9a9e--ideas-para-decoupage (1).jpg"
+ },
+ {
+  "id": 9,
+  "firstName": "carlos",
+  "lastName": "gomez",
+  "email": "cgomez@hotmail.com",
+  "password": "$2a$10$rVDHgsEypujZsjfS.VuP.eVLyAegc0kNktu2Tnbv/e0Fl/P8Jn6VO",
+  "image": "16650416889724d44e76758f35cd9dbce5f77259b9a9e--ideas-para-decoupage (1).jpg"
  }
 ]

@@ -42,7 +42,7 @@ const upload = multer({ storage });
 /* GET users listing. */
 
 router.get("/", usersController.homeUsers);
-router.get("/create", guestMiddleware, usersController.create);
+router.get("/register", guestMiddleware, usersController.create);
 router.post("/create", upload.single("fotoProducto"), validaciones, usersController.store);
 router.get("/login", guestMiddleware ,  usersController.loginView);
 router.post("/login", usersController.loginAction);
