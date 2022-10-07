@@ -48,19 +48,11 @@
   "image": "1665035013438maxresdefault.jpg"
  },
  {
-  "id": 8,
-  "firstName": "pepe",
-  "lastName": "sanches",
-  "email": "pepe@hotmail.com",
-  "password": "$2a$10$bfrSia3/4FmL.WZnze1yPuQOU8nOQXSeX9CDP6CPrwGTPhjlUCLqy",
-  "image": "16650413091004d44e76758f35cd9dbce5f77259b9a9e--ideas-para-decoupage (1).jpg"
- },
- {
-  "id": 9,
-  "firstName": "carlos",
-  "lastName": "gomez",
-  "email": "cgomez@hotmail.com",
-  "password": "$2a$10$rVDHgsEypujZsjfS.VuP.eVLyAegc0kNktu2Tnbv/e0Fl/P8Jn6VO",
-  "image": "16650416889724d44e76758f35cd9dbce5f77259b9a9e--ideas-para-decoupage (1).jpg"
+  "id": 10,
+  "firstName": "kareem ",
+  "lastName": "campbell",
+  "email": "kcambella@aol.com",
+  "password": "$2a$10$9zwqJ610v3F0v0oVEc0zVeREQexVM6nidf7jpmY7OhjlMwUoKMgQy",
+  "image": "1665077272221maxresdefault.jpg"
  }
 ]
