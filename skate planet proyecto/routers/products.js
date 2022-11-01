@@ -28,14 +28,16 @@ router.get("/", productsController.home);
 router.get("/create", productsController.create);
 router.post("/create", upload.single("fotoProducto"), productsController.store);
 
-/*** RUTA GET QUE MUESTRA UN DETALLE DE PRODUCTO ***/
+
+
+// /*** RUTA GET QUE MUESTRA UN DETALLE DE PRODUCTO ***/
 router.get("/detail/:id", productsController.detail);
 
-/*** RUTA GET EDIT PARA EDITAR Y POST PARA ENVIAR LA INFO ***/
+// /*** RUTA GET EDIT PARA EDITAR Y POST PARA ENVIAR LA INFO ***/
 router.get("/edit/:id", productsController.edit);
 router.put("/edit/:id", upload.single("fotoProducto"), productsController.update);
 
-/*** RUTA DELETE PARA BORRAR PRODUCTOS***/
+// /*** RUTA DELETE PARA BORRAR PRODUCTOS***/
 router.delete("/delete/:id", productsController.destroy);
 
 

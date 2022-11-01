@@ -8,21 +8,21 @@
             <main>
                 
                 <h3>Detalle de producto :
-                    <%= producto.name %>
+                    <%= producto.nombre %>
                 </h3>
         
                 <div class="precio-descuento">
 
                 </div>
                 <h4 class="descripcion">
-                    <%= producto.description %>
+                    <%= producto.descripcion %>
                 </h4>
                 </div>
 
                 <section class="tablas">
                     <article>
                         <div class="tablaaguila">
-                            <img src="/images/products/<%= producto.image %>" alt= "tablaaguila" class="product_img2">
+                            <img src="/images/products/<%= producto.image %>" alt= "fotoProducto" class="product_img2">
                         </div>
                         <p class="precio">Precio: 
                             $<%= producto.price %>
@@ -41,13 +41,13 @@
                         <button class="agregarAlCarrito">Add to cart</button>
                         <br>
                         <div class="botoneditar">
-                        <a href="/products/edit/<%= producto.id %>" class="agregarAlCarrito" style="text-decoration: none;" >Editar producto</a>
+                        <a href="/products/edit/<%= producto.idProducto %>" class="agregarAlCarrito" style="text-decoration: none;" >Editar producto</a>
                         <br></div>
                         <br>
                     </div>
                     <br>
                     <div class="botonEliminar">
-						<form action="/products/delete/<%= producto.id %>?_method=DELETE" method="POST" style="display: flex">
+						<form action="/products/delete/<%= producto.idProducto %>?_method=DELETE" method="POST" style="display: flex">
 							<button type="submit" class="agregarAlCarrito">Eliminar</button>
                             </form>
                     </div>

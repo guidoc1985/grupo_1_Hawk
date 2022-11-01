@@ -35,7 +35,7 @@ app.use("/users", usersRouter);
 
 
 
-app.listen(3040, ()=>{
-    console.log('Servidor 3040 funcionando');
+app.listen(3050, ()=>{
+    console.log('Servidor 3050 funcionando');
 });
 

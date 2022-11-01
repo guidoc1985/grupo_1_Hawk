@@ -1,5 +1,5 @@
 const fs = require("fs");
-const { all } = require("../routers/users");
+
 
 const User = {
     fileName: "./data/usersDataBase.json",

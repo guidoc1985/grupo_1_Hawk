@@ -16,20 +16,24 @@
                     <h2 class="titulo-registro">Registra tus productos</h2>
                     <!-- nombre, codigo, precio, material, categoría, medida, origen, descripción, -->
                     <br>
-                    <label for="name"></label>
-                    <input type="text" name="name" id="name" placeholder="Nombre del producto" class="form-input">
+                    <label for="idProducto"></label>
+                    <input type="number" name="idProducto" id="idProducto" placeholder="idProducto">
                     <br>
-                    <label for="codigo"></label>
-                    <input type="text" name="codigo-proucto" id="codigo-producto" placeholder="Código del producto" class="form-input">
+                    <label for="nombre"></label>
+                    <input type="text" name="nombre" id="nombre" placeholder="nombre">
+                    <br>
+                    <label for="descripcion"></label>
+                    <input type="text" name="descripcion" id="descripcion" placeholder="descripcion">
                     <br>
                     <label for="price"></label>
-                    <input type="text" name="price" id="price" placeholder="Precio (en USD)" class="form-input">
+                    <input type="number" name="price" id="price" placeholder="price">
                     <br>
-                    <label for="material"></label>
-                    <input type="text" name="material" id="material" placeholder="Material" class="form-input">
-                    <br>
-                    <label for="category"></label position="relative" class="form-input">
-                    <select name="category" id="category">
+                    <label for="id_categorias"></label position="relative">
+                        <!-- <input type="text" name="id_categorias" id="id_categorias" placeholder="categoria"> -->
+                        <br>
+                        <label for="image" class="form-label"></label>
+                    <input type="file" id="image" name="fotoProducto">
+                    <!-- <select name="id_categorias" id="id_categorias">
                         <option value="0">Categoría</option>
                         <option value="Skate">Skateboard</option>
                         <option value="Longboard">Longboard</option>
@@ -38,20 +42,11 @@
                         <option value="Trucks">Trucks</option>
                         <option value="ropa">Ropa</option>
                         <option value="Accesorios">Accesorios</option>
-                    </select>
+                    </select> -->
                     <br>
-                    <label for="Medida"></label>
-                    <input type="text" name="Medida" id="Medida" placeholder="Medida">
-                    <br>
-                    <label for="origen"></label>
-                    <input type="text" name="origen" id="origen" placeholder="Origen">
-                    <br>
-                    <label for="foto" class="form-label"></label>
-                    <input type="file" id="foto" name="fotoProducto" class="form-input">
-                    <br>
-                    <label for="description"></label>
-                    <textarea class="textarea-form" name="description" id="description" cols="35" rows="2"
-                        placeholder="Deja una descripción del producto" class="form-input"></textarea>
+                    
+                   
+                    
                     <br>
                     <button type="submit" class="boton-guardar">Guardar</button>
                     <!-- <img src="images/esqueleto-bailando-esqueleto.gif" alt="gif" class="gif-esqueleto"> -->

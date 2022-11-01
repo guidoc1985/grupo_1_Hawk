@@ -48,6 +48,9 @@ router.get("/login", guestMiddleware ,  usersController.loginView);
 router.post("/login", usersController.loginAction);
 router.get('/profile/', authMiddleware ,  usersController.profile);
 router.get('/logout', usersController.logoutAction);
+router.get("/detail/:id", usersController.detail);
+router.get("/edit/:id", usersController.edit);
+router.put("/edit/:id", upload.single("fotoProducto"), usersController.update);
 // router.post('/', validacionesUser ,  usersController.loginAction);
 
 // router.post("/", validacionesUser, usersController.loginAction, (req, res) => {
