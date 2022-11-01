@@ -28,3 +28,5 @@ https://trello.com/b/fnzt5TPL/grupo01 tablero de trabajo
 https://trello.com/b/oua6dama/sprint-3# tablero sprint 3
 
 https://trello.com/b/GWNMtEgk/sprint-4
+
+https://trello.com/b/BvE9LO7k/sprint-6
