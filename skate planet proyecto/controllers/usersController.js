@@ -28,10 +28,18 @@ const usersController = {
   loginView: (req, res) => {
      return res.render("login");
     },
+    
 
-    loginAction: (req, res) => {
-      let userToLogin = User.findByField('email', req.body.email);
+    loginAction: async function (req, res)  {
+   try {
+    let userToLogin = await db.User.findOne({
+      where : { email : req.body.email }
+    })
+    .then((resultado)=> {
+      console.log(resultado)
+    });
       
+   
       if(userToLogin) {
         let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
         if (isOkThePassword) {
@@ -60,11 +68,16 @@ const usersController = {
           }
         }
       });
+    } catch (error) {
+      console.log(error);
+    }
     },
+
     profile: (req, res) => {
       return res.render('user-perfil', {
         user: req.session.userLogged
       });
+  
     },
   
     // logout: (req, res) => {
@@ -106,8 +119,9 @@ const usersController = {
       res.render("register.ejs");
     },
   //te deberia guardar el usuario//
-    // store:(req, res) => {
-      // const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
+    // store: async function (req, res) {
+    //   try {
+    //   // const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
     //     const resultValidation = validationResult(req);
 
     //     if(resultValidation.errors.length > 0){
@@ -116,7 +130,7 @@ const usersController = {
     //       });
     //     }
 
-    //     let userInDB = User.findByField("email", req.body.email);
+    //     let userInDB =  db.User.findAll().then("email", req.body.email);
 
     //     if (userInDB) {
     //       return res.render("register", {
@@ -134,42 +148,55 @@ const usersController = {
     //       image: req.file.filename
     //     }
 
-    //   let userCreated = User.create(userToCreate);
+    //   let userCreated = db.User.create(userToCreate);
 
     //    res.redirect("/login");
-    //   }
+      
+    // } catch (error) {
+    //   console.log(error);
     // }
+    // },
    
-  store: async function (req, res) {
-    try {
-      const usuarioNuevo = await db.User.create({
-        idUsuario: req.body.idUsuario,
-        first_name: req.body.first_name,
-        last_name: req.body.last_name,
-        email: req.body.email,
-        password: req.body.password,
-        image: req.file?
-        req.file.filename: "default-image.png"
-       
-      });
-
-      if (req.file) {
-        usuarioNuevo.image = req.file.filename;
+    store: async function (req, res) {
+      const resultValidation = validationResult(req);
+  
+      if(resultValidation.errors.length > 0){
+        return res.render("register.ejs", {
+          old : req.body,
+          errors: resultValidation.mapped(),
+          
+        });
       }
-      // if (req.file) {
-      //       productoNuevo.image = req.file.image;
-      //     }
-      
-      //     products.push(productoNuevo);
-      
-          // const data = JSON.stringify(products, null, " ");
-          // fs.writeFileSync(productsFilePath, data);
-      console.log({ usuarioNuevo });
-      res.redirect("/users");
-    } catch (error) {
-      console.log(error);
-    }
-  }, 
+      try {
+        const usuarioNuevo = await db.User.create({
+          
+          first_name: req.body.first_name,
+          last_name: req.body.last_name,
+          email: req.body.email,
+          password:bcryptjs.hashSync(req.body.password, 10),
+          image: req.file?
+          req.file.filename: "default-image.png"
+         
+        });
+  
+        if (req.file) {
+          usuarioNuevo.image = req.file.filename;
+        }
+        // if (req.file) {
+        //       productoNuevo.image = req.file.image;
+        //     }
+        
+        //     products.push(productoNuevo);
+        
+            // const data = JSON.stringify(products, null, " ");
+            // fs.writeFileSync(productsFilePath, data);
+        console.log({ usuarioNuevo });
+        res.redirect("/users");
+      } catch (error) {
+        console.log(error);
+      }
+    }, 
+
   edit: async function (req, res)  {
     try {
 
@@ -186,7 +213,7 @@ const usersController = {
     
    
     db.User.update({
-      idUsuario: req.body.idUsuario,
+      
       first_name: req.body.first_name,
       last_name: req.body.last_name,
       email: req.body.email,
@@ -202,6 +229,19 @@ const usersController = {
     res.redirect("/users");
    
   },  
+  destroy: async function (req, res) {
+    try {
+      // await db.ActorMovie.destroy({ where: {movie_id: req.params.id}})
+      await db.User.destroy({
+        where: {
+          idUsuario: req.params.id,
+        },
+      });
+      res.redirect("/users");
+    } catch (error) {
+      console.log(error);
+    }
+  },
   
   
 

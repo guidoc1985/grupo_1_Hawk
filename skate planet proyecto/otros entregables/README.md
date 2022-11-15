@@ -29,4 +29,8 @@ https://trello.com/b/oua6dama/sprint-3# tablero sprint 3
 
 https://trello.com/b/GWNMtEgk/sprint-4
 
+https://trello.com/b/fNCLFBv6/sprint-5
+
 https://trello.com/b/BvE9LO7k/sprint-6
+
+https://trello.com/b/4Xiu15He/sprint-7

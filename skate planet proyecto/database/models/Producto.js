@@ -1,11 +1,12 @@
 module.exports = (sequelize, dataTypes) => {
     let alias = 'Producto';
     let cols = {
+      
         idProducto: {
             type: dataTypes.INTEGER,
             primaryKey: true,
-            allowNull: false,
-        },
+            autoIncrement: true,
+          },
         // created_at: dataTypes.TIMESTAMP,
         // updated_at: dataTypes.TIMESTAMP,
         nombre: {
@@ -21,7 +22,7 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: true
         },
         image: {
-            type: dataTypes.BLOB,
+            type: dataTypes.STRING,
             allowNull: true
         },
         id_categorias: dataTypes.INTEGER

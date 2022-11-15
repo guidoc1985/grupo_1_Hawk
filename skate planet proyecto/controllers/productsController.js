@@ -2,6 +2,7 @@ let db = require("../database/models");
 const sequelize = db.sequelize;
 const fs = require("fs");
 const path = require("path");
+const { validationResult } = require("express-validator");
 
 // const productsFilePath = path.join(__dirname, "../data/productsDataBase.json");
 // const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
@@ -75,9 +76,18 @@ const controller = {
   // },
 
   store: async function (req, res) {
+    const resultValidation = validationResult(req);
+
+        if(resultValidation.errors.length > 0){
+          return res.render("ingresar-productos.ejs", {
+            old : req.body,
+            errors: resultValidation.mapped(),
+          });
+        }
+
     try {
       const productoNuevo = await db.Producto.create({
-        idProducto: req.body.idProducto,
+       
         nombre: req.body.nombre,
         descripcion: req.body.descripcion,
         price: req.body.price,
@@ -105,6 +115,7 @@ const controller = {
   
   // Update - MUESTRA EL FORMULARIO DE EDICION DE PRODUCTOS
   edit: async function (req, res)  {
+    
     try {
     // const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
     // const producto = products.find((p) => p.id == req.params.id);
@@ -117,12 +128,20 @@ const controller = {
     
   },
 
-  update: function (req, res)  {
-    
+  update: async function (req, res)  {
+
+    // const resultValidation = validationResult(req);
+
+    // if(resultValidation.errors.length > 0){
+    //   return res.render("editar-productos.ejs", {
+    //     errors: resultValidation.mapped(),
+    //   });
+    // }
+    try{
     // const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
     // const producto = products.find((p) => p.id == req.params.id);
-    db.Producto.update({
-        idProducto: req.body.idProducto,
+    await db.Producto.update({
+      
         nombre: req.body.nombre,
         descripcion: req.body.descripcion,
         price: req.body.price,
@@ -135,8 +154,11 @@ const controller = {
         idProducto: req.params.id
       }
     });
+    
     res.redirect("/products");
-   
+  } catch (error) {
+    console.log(error);
+  }
   },
     
   destroy: async function (req, res) {

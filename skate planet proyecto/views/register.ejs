@@ -21,33 +21,57 @@
                     <h2 class="titulo-registro">Registrate como usuario</h2>
                     
                     <!-- nombre, codigo, precio, material, categoría, medida, origen, descripción, -->
-                    <br>
-                    <label for="idUsuario"></label>
-                    <input type="number" name="idUsuario" id="idUsuario" placeholder="idUsuario">
+                    
                     <br>
                     <label for="first_name"></label>
-                    <input type="text" name="first_name" id="first_name" placeholder="nombre">
+            <input class="first_name" type="text" name="first_name" id="first_name" placeholder="nombre" 
+            value="<%= locals.old && old.first_name ? old.first_name : '' %>">
+                    <br>
+                    <% if (locals.errors && errors.first_name) { %>
+                        <%= errors.first_name.msg %>
+                    <% } %>
                     <br>
                     <label for="last_name"></label>
-                    <input type="text" name="last_name" id="last_name" placeholder="apellido">
+                    <input class="last_name" type="text" name="last_name" id="last_name" placeholder="apellido"
+                    value="<%= locals.old && old.last_name ? old.last_name : '' %>">
+                    <br>
+                    <% if (locals.errors && errors.last_name) { %>
+                        <%= errors.last_name.msg %>
+                    <% } %>
                     <br>
                     <label for="email"></label>
-                    <input type="text" name="email" id="email" placeholder="email">
+                    <input class="email" type="text" name="email" id="email" placeholder="email"
+                    value="<%= locals.old && old.email ? old.email : '' %>">
                     <br>
+                    <% if (locals.errors && errors.email) { %>
+                        <%= errors.email.msg %>
+                    <% } %>
                     <br>
                     <label for="password"></label>
-                    <input type="text" name="password" id="password" placeholder="*******">
+                    <input class="password" type="text" name="password" id="password" placeholder="*******">
                     <br>
+                    <% if (locals.errors && errors.password) { %>
+                        <%= errors.password.msg %>
+                    <% } %>
                     <label for="image" class="form-label"></label>
                     <input type="file" id="image" name="fotoProducto">
                    
                     <br>
+                    <% if (locals.errors && errors.image) { %>
+                        <%= errors.image.msg %>
+                    <% } %>
+                    <br>
+                    <br>
+
                     <button type="submit" class="boton-guardar">Guardar</button>
+
+                    <button type="reset" class="boton-guardar">Borrar</button>
                     <!-- <img src="images/esqueleto-bailando-esqueleto.gif" alt="gif" class="gif-esqueleto"> -->
                 </form>
             </div>
         </span>
         <br>
+        <script src="/js/usersValidations.js"></script>
         <%- include('./partials/footer') %>
 </body>
 

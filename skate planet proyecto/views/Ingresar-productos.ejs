@@ -15,24 +15,39 @@
                 
                     <h2 class="titulo-registro">Registra tus productos</h2>
                     <!-- nombre, codigo, precio, material, categoría, medida, origen, descripción, -->
-                    <br>
-                    <label for="idProducto"></label>
-                    <input type="number" name="idProducto" id="idProducto" placeholder="idProducto">
-                    <br>
+                  <br>
                     <label for="nombre"></label>
-                    <input type="text" name="nombre" id="nombre" placeholder="nombre">
+                    <input class="nombre" type="text" name="nombre" id="nombre" placeholder="nombre"
+                    value="<%= locals.old && old.nombre ? old.nombre : '' %>">
+                    <br>
+                    <% if (locals.errors && errors.nombre) { %>
+                        <%= errors.nombre.msg %>
+                    <% } %>
                     <br>
                     <label for="descripcion"></label>
-                    <input type="text" name="descripcion" id="descripcion" placeholder="descripcion">
+                    <input class="descripcion" type="text" name="descripcion" id="descripcion" placeholder="descripcion"
+                    value="<%= locals.old && old.descripcion ? old.descripcion : '' %>">
+                    
+                    <% if (locals.errors && errors.descripcion) { %>
+                        <%= errors.descripcion.msg %>
+                    <% } %>
                     <br>
                     <label for="price"></label>
-                    <input type="number" name="price" id="price" placeholder="price">
+                    <input type="number" name="price" id="price" placeholder="price"
+                    value="<%= locals.old && old.price ? old.price : '' %>">
+                    <% if (locals.errors && errors.price) { %>
+                        <%= errors.price.msg %>
+                    <% } %>
                     <br>
                     <label for="id_categorias"></label position="relative">
                         <!-- <input type="text" name="id_categorias" id="id_categorias" placeholder="categoria"> -->
                         <br>
                         <label for="image" class="form-label"></label>
-                    <input type="file" id="image" name="fotoProducto">
+                <input class="image" type="file" id="image" name="fotoProducto">
+                    <br>
+                    <% if (locals.errors && errors.image) { %>
+                        <%= errors.image.msg %>
+                    <% } %>
                     <!-- <select name="id_categorias" id="id_categorias">
                         <option value="0">Categoría</option>
                         <option value="Skate">Skateboard</option>
@@ -49,12 +64,17 @@
                     
                     <br>
                     <button type="submit" class="boton-guardar">Guardar</button>
+                     <br>
+                     <br>
+                    <button type="reset" class="boton-guardar">Borrar</button>
                     <!-- <img src="images/esqueleto-bailando-esqueleto.gif" alt="gif" class="gif-esqueleto"> -->
                 </form>
             </div>
         </span>
         <br>
+        <script src="/js/productValidations.js"></script>
         <%- include('./partials/footer') %>
+       
 </body>
 
 </html>

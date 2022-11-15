@@ -1,5 +1,34 @@
 const express = require("express");
 const router = express.Router();
+const { body } = require("express-validator");
+const path = require("path");
+
+const validaciones = [
+  body("nombre")
+    .notEmpty()
+    .withMessage("El nombre es obligatorio"),
+    body("descripcion")
+    .notEmpty()
+    .withMessage("La descripción no puede estar vacía").bail()
+    .isLength({ min:20})
+    .withMessage("la descripción tiene que tener mínimo 20 caracteres"),
+    body("image").custom((value, { req}) => {
+      let file= req.file;
+      let acceptedExtensions = [".jpg", ".jpeg", ".png", ".gif"];
+      if (!file) {
+        throw new Error("Tienes que subir una foto");
+      } else {
+        let fileExtension = path.extname(file.originalname);
+        if (!acceptedExtensions.includes(fileExtension)) {
+          throw new Error (`Las extensiones de archivo tienen que ser ${acceptedExtensions.join(", ")}`);
+        }
+      }
+      return true
+    })
+    
+]
+
+
 
 // ************ MULTER ************
 const multer = require("multer");
@@ -26,7 +55,7 @@ router.get("/", productsController.home);
 
 /*** RUTA GET A QUE MUESTRE LA INFO DE CREACION Y POST PARA QUE ENVIE LA INFO NUEVA ***/
 router.get("/create", productsController.create);
-router.post("/create", upload.single("fotoProducto"), productsController.store);
+router.post("/create", upload.single("fotoProducto"), validaciones, productsController.store);
 
 
 
@@ -35,7 +64,7 @@ router.get("/detail/:id", productsController.detail);
 
 // /*** RUTA GET EDIT PARA EDITAR Y POST PARA ENVIAR LA INFO ***/
 router.get("/edit/:id", productsController.edit);
-router.put("/edit/:id", upload.single("fotoProducto"), productsController.update);
+router.put("/edit/:id", upload.single("fotoProducto"), validaciones, productsController.update);
 
 // /*** RUTA DELETE PARA BORRAR PRODUCTOS***/
 router.delete("/delete/:id", productsController.destroy);

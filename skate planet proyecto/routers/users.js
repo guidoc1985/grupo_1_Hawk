@@ -1,5 +1,5 @@
 const express = require('express');
-
+const path = require("path");
 const router = express.Router();
 const { body } = require("express-validator");
 const usersController = require('../controllers/usersController');
@@ -7,20 +7,39 @@ const guestMiddleware = require('../middlewares/guestMiddleware');
 const authMiddleware = require('../middlewares/authMiddleware');
 
 const validaciones = [
-  body("firstName")
+  body("first_name")
     .notEmpty()
-    .withMessage("El nombre es obligatorio"),
-    body("lastName")
+    .withMessage("El nombre es obligatorio").bail()
+    .isLength({min:2})
+    .withMessage("El nombre debe tener mínimo 2 letras"),
+    body("last_name")
     .notEmpty()
-    .withMessage("El apellido es obligatorio"),
+    .withMessage("El apellido es obligatorio").bail()
+    .isLength({min:2})
+    .withMessage("El apellido debe tener mínimo 2 letras"),
     body("email")
     .notEmpty()
     .withMessage("El email es obligatorio").bail()
     .isEmail().withMessage("Debes escribir un correo válido"),
     body("password")
     .notEmpty()
-    .withMessage("El pass es obligatorio"),
-   
+    .withMessage("El pass es obligatorio").bail()
+    .isLength({min:8})
+    .withMessage("el pass tiene que tener mínimo 8 carácteres"),
+    body("image").custom((value, { req}) => {
+      let file= req.file;
+      let acceptedExtensions = [".jpg", ".jpeg", ".png", ".gif"];
+      if (!file) {
+        throw new Error("Tienes que subir una foto");
+      } else {
+        let fileExtension = path.extname(file.originalname);
+        if (!acceptedExtensions.includes(fileExtension)) {
+          throw new Error (`Las extensiones de archivo tienen que ser ${acceptedExtensions.join(", ")}`);
+        }
+      }
+      return true
+    })
+    
 ]
 // ************ MULTER ************
 const multer = require("multer");
@@ -51,6 +70,7 @@ router.get('/logout', usersController.logoutAction);
 router.get("/detail/:id", usersController.detail);
 router.get("/edit/:id", usersController.edit);
 router.put("/edit/:id", upload.single("fotoProducto"), usersController.update);
+router.delete("/delete/:id", usersController.destroy);
 // router.post('/', validacionesUser ,  usersController.loginAction);
 
 // router.post("/", validacionesUser, usersController.loginAction, (req, res) => {

@@ -4,8 +4,8 @@ module.exports = (sequelize, dataTypes) => {
         idUsuario: {
             type: dataTypes.INTEGER,
             primaryKey: true,
-            allowNull: false,
-        },
+            autoIncrement: true,
+          },
         // created_at: dataTypes.TIMESTAMP,
         // updated_at: dataTypes.TIMESTAMP,
         first_name: {
