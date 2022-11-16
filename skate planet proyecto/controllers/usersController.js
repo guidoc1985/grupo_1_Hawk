@@ -35,23 +35,26 @@ const usersController = {
     let userToLogin = await db.User.findOne({
       where : { email : req.body.email }
     })
-    .then((resultado)=> {
-      console.log(resultado)
-    });
-      
    
-      if(userToLogin) {
-        let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
+    // .then((resultado)=> {
+      
+    //   console.log(resultado)
+  console.log (userToLogin)
+   if(userToLogin)
+   {
+     let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.dataValues.password);
+      console.log(isOkThePassword)
         if (isOkThePassword) {
-          delete userToLogin.password;
+          delete userToLogin.dataValues.password;
           req.session.userLogged = userToLogin;
   
           if(req.body.remember_user) {
             res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
           }
-  
+         
           return res.redirect('/');
         } 
+     
         return res.render('login', {
           errors: {
             email: {
@@ -67,7 +70,9 @@ const usersController = {
             msg: 'No se encuentra este email en nuestra base de datos'
           }
         }
+   
       });
+    // })
     } catch (error) {
       console.log(error);
     }
