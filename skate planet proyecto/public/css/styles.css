@@ -403,7 +403,6 @@ div.errores{
 
 
 
-
 @media (min-width: 361px) {
     .link-form{
         text-decoration: none;
@@ -802,7 +801,7 @@ div.errores{
        
         font-family: 'Anton', sans-serif;
         align-items: center;
-        margin-left: -60%;
+        margin-left: -45%;
     
     }
     .precio-descuento{

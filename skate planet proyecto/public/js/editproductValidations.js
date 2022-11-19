@@ -18,7 +18,7 @@ window.addEventListener("load", function(){
         if (campoDescripcion.value == ""){
          errores.push("el campo de descrpcion NO puede estar vacío")
         } else if(campoDescripcion.value.length < 20){
-         errores.push ("EL campo de nombre tiene que tener más de 20 letras");
+         errores.push ("EL descripcion tiene que tener más de 20 letras");
         };
         if (errores.length > 0){
             e.preventDefault();

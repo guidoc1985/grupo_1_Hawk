@@ -11,6 +11,9 @@ const usersRouter = require("./routers/users");
 const session = require("express-session");
 const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 
+const apiProductsRoutes = require("./routers/api/productsRoutes");
+const apiUsersRoutes = require("./routers/api/usersRoutes");
+
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride("_method")); // Pasar poder pisar el method="POST" en el formulario por PUT y DELETE
@@ -30,7 +33,8 @@ app.set("views", path.join(__dirname, "/views")); // Define la ubicación de la 
 app.use("/", mainRouter);
 app.use("/products", productRouter);
 app.use("/users", usersRouter);
-
+app.use("/productsRoutes", apiProductsRoutes);
+app.use("/usersRoutes", apiUsersRoutes);
 
 
 
