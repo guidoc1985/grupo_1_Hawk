@@ -32,17 +32,23 @@ module.exports = (sequelize, dataTypes) => {
         timestamps: false
         
     };
-    const Producto = sequelize.define(alias, cols, config); 
+    const Producto = sequelize.define(alias, cols, config);
+
+    // Producto.associate = function (modelos) {
+    //     Producto.belongsTo(modelos.Tablasecundaria, {
+    //       as: "categorias",
+    //       foreignKey: "id_categorias",
+    //     });
 
     // Producto.associate = function (models) {
-    //     Producto.belongsToMany(models.User, { 
-    //         as: "usuarios",
-    //         through: 'productos_comprados',
-    //         foreignKey: 'id_usuario',
-    //         otherKey: 'id_productos',
+    //     Producto.belongsTo(models.Tablasecundaria, { 
+    //         as: "categorias",
+        
+    //         foreignKey: 'id_categorias',
+            
     //         timestamps: false
     //     })
     // }
 
     return Producto
-};
+}
