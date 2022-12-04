@@ -27,7 +27,13 @@ module.exports = (sequelize, dataTypes) => {
         image: {
             type: dataTypes.STRING,
             allowNull: false
-        }
+        },
+        url_img: {
+            type: dataTypes.VIRTUAL,
+            get(){
+                return "http://localhost:3000/images/users/" + this.image;
+            },
+        },
     };
     let config = {
         tableName: "usuarios",

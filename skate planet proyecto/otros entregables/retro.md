@@ -50,3 +50,7 @@ Charlando en equipo sentimos la mismas cosas que en el sprint anterior. Encotrar
 3. Continuar haciendo: fomentar el compañerismo.
 4. Hacer menos: mantener al dia los contenidos para aportar al sprint.
 
+RETRO SPRINT 8
+
+......
+

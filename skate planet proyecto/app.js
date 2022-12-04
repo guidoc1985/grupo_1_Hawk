@@ -3,7 +3,7 @@ const methodOverride = require("method-override"); // Pasar poder usar los méto
 const path = require("path");
 const app = express();
 var cookieParser = require("cookie-parser");
-
+const cors = require ("cors");
 const mainRouter = require("./routers/main.js");
 const productRouter = require("./routers/products.js")
 const usersRouter = require("./routers/users");
@@ -13,7 +13,9 @@ const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 
 const apiProductsRoutes = require("./routers/api/productsRoutes");
 const apiUsersRoutes = require("./routers/api/usersRoutes");
+const apiCategoryRoutes = require("./routers/api/categoryRoutes");
 
+app.use(cors());
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride("_method")); // Pasar poder pisar el method="POST" en el formulario por PUT y DELETE
@@ -36,6 +38,7 @@ app.use("/users", usersRouter);
 app.use("/productsRoutes", apiProductsRoutes);
 app.use("/usersRoutes", apiUsersRoutes);
 
+app.use("/categoryRoutes", apiCategoryRoutes);
 
 
 

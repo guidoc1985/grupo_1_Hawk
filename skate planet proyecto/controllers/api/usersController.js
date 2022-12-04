@@ -13,16 +13,27 @@ const usersController = {
     },
 
     show: (req, res) => {
-        db.User.findByPk(req.params.id)
-        .then((user) => {
-        return  res.status(200).json({ 
-           id: user.idUsuario,
-           nombre: user.first_name,
-           apellido: user.last_name,
-           imagen: user.image,
-           status:200 
-   });
-        });
+      db.User.findAll()
+      .then(users =>{
+        let lastuser = users.pop()
+        
+        res
+          .json({
+            data: lastuser,
+         
+          })
+      })
+      
+        // db.User.findByPk(req.params.id)
+        // .then((user) => {
+        // return  res.status(200).json({ 
+        //    id: user.idUsuario,
+        //    nombre: user.first_name,
+        //    apellido: user.last_name,
+        //    imagen: user.image,
+        //    status:200 
+  //  });
+  //       });
       }
 }
 

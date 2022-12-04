@@ -16,6 +16,9 @@
                     <h2 class="titulo-registro">Registra tus productos</h2>
                     <!-- nombre, codigo, precio, material, categoría, medida, origen, descripción, -->
                   <br>
+                  <div class="errores">
+                    <ul></ul>
+                   </div>
                     <label for="nombre"></label>
                     <input class="nombre" type="text" name="nombre" id="nombre" placeholder="nombre"
                     value="<%= locals.old && old.nombre ? old.nombre : '' %>">

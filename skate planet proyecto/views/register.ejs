@@ -23,6 +23,9 @@
                     <!-- nombre, codigo, precio, material, categoría, medida, origen, descripción, -->
                     
                     <br>
+                    <div class="errores">
+                        <ul></ul>
+                       </div>
                     <label for="first_name"></label>
             <input class="first_name" type="text" name="first_name" id="first_name" placeholder="nombre" 
             value="<%= locals.old && old.first_name ? old.first_name : '' %>">
