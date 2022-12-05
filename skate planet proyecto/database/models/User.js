@@ -31,9 +31,9 @@ module.exports = (sequelize, dataTypes) => {
         url_img: {
             type: dataTypes.VIRTUAL,
             get(){
-                return "http://localhost:3000/images/users/" + this.image;
+                return "/images/users/" + this.image;
             },
-        },
+        }
     };
     let config = {
         tableName: "usuarios",

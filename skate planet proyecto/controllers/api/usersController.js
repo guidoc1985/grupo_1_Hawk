@@ -13,7 +13,9 @@ const usersController = {
     },
 
     show: (req, res) => {
-      db.User.findAll()
+      db.User.findAll({
+        attributes: [ "url_img", "idUsuario", "first_name", "last_name", "email", "image"]
+      })
       .then(users =>{
         let lastuser = users.pop()
         
