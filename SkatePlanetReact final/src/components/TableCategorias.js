@@ -39,7 +39,7 @@ class TableCategorias extends Component {
       <table className="table">
         <thead>
           <tr>
-            <th>CATEOGORIAS TOTAL:</th>
+            <th>CATEGORIAS TOTAL:</th>
             <tbody>
         <td>{this.state.categorias}</td>
         <td></td>
