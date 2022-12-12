@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const { body } = require("express-validator");
 const path = require("path");
+const productMiddleware = require('../middlewares/productCreateMiddleware');
 
 const validaciones = [
   body("nombre")
@@ -54,7 +55,7 @@ const productsController = require("../controllers/productsController");
 router.get("/", productsController.home);
 
 /*** RUTA GET A QUE MUESTRE LA INFO DE CREACION Y POST PARA QUE ENVIE LA INFO NUEVA ***/
-router.get("/create", productsController.create);
+router.get("/create",productMiddleware,  productsController.create);
 router.post("/create", upload.single("fotoProducto"), validaciones, productsController.store);
 
 
